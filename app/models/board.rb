@@ -1,5 +1,14 @@
 class Board < ApplicationRecord
+    validates :width, :height, :mines, numericality: { greater_than_or_equal_to: 1 }
+    validate :mines_less_than_or_equal_to_cells
     serialize :grid, Array, coder: JSON
+
+    def mines_less_than_or_equal_to_cells
+        if mines > width * height
+          errors.add(:mines, "cannot be greater than the total number of cells (width * height)")
+        end
+    end
+
     def generate_board
       # Initialize the grid with empty cells
       board = Array.new(height) { Array.new(width, 0) }

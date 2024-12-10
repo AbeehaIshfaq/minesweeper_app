@@ -26,5 +26,5 @@ class BoardsController < ApplicationController
     def board_params
       params.require(:board).permit(:name, :email, :width, :height, :mines)
     end
-end
+  end
   
