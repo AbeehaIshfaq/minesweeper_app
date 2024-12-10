@@ -1,0 +1,10 @@
+<h1>All Generated Boards</h1>
+<ul>
+  <% @boards.each do |board| %>
+    <li>
+      <strong><%= link_to board.name, board %></strong> 
+      by <%= board.email %> 
+      on <%= board.created_at.strftime("%B %d, %Y %H:%M") %>
+    </li>
+  <% end %>
+</ul>

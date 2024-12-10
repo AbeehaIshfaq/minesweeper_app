@@ -1,0 +1,29 @@
+<%= form_with model: Board.new, url: boards_path, method: :post do |f| %>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+    
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    
+    <%= f.label :width %>
+    <%= f.number_field :width %>
+    
+    <%= f.label :height %>
+    <%= f.number_field :height %>
+    
+    <%= f.label :mines %>
+    <%= f.number_field :mines %>
+    
+    <%= f.submit "Generate Board" %>
+  <% end %>
+  
+  <h2>Recent Boards</h2>
+<ul>
+  <% Board.order(created_at: :desc).limit(10).each do |board| %>
+    <li>
+      <strong><%= link_to board.name, board %></strong> 
+      by <%= board.email %> 
+      on <%= board.created_at.strftime("%B %d, %Y %H:%M") %>
+    </li>
+  <% end %>
+</ul>
