@@ -4,7 +4,7 @@
     <title>Minesweeper App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+<%= javascript_include_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", media: "all", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>

@@ -1,3 +1,31 @@
 // Entry point for your Sass build
 @use "bootstrap/scss/bootstrap" as *;
 @use "bootstrap-icons/font/bootstrap-icons" as *;
+.pagination .page-link {
+    color: #282a2c;
+    background-color: #f8f9fa;
+  }
+  .pagination .page-link:hover {
+    background-color: #282a2c;
+    color: rgb(247, 239, 239);
+  }
+  .board-cell {
+    position: relative;
+    text-align: center;
+  }
+  
+  .concealed {
+    background-color: #ccc; 
+    color: transparent;
+  }
+  
+  .board-cell.concealed {
+    background-color: #ccc !important; 
+    color: transparent !important;
+  }
+  
+  .board-cell.revealed {
+    background-color: transparent !important;
+    color: black !important;
+  }
+  

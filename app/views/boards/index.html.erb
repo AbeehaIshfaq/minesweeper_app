@@ -1,10 +1,34 @@
-<h1>All Generated Boards</h1>
-<ul>
-  <% @boards.each do |board| %>
-    <li>
-      <strong><%= link_to board.name, board %></strong> 
-      by <%= board.email %> 
-      on <%= board.created_at.strftime("%B %d, %Y %H:%M") %>
-    </li>
-  <% end %>
-</ul>
+<h2>All Generated Boards</h2>
+<% if @boards.any? %>
+  <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Board Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Width</th>
+      <th scope="col">Height</th>
+      <th scope="col">Mines</th>
+      <th scope="col">Created At</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <% @boards.each do |board| %>
+      <tr>
+        <td><%= link_to board.name, board %></td>
+        <td><%= board.email %></td>
+        <td><%= board.width %></td>
+        <td><%= board.height %></td>
+        <td><%= board.mines %></td>
+        <td><%= board.created_at.strftime("%B %d, %Y %H:%M") %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+  <div class="pagination">
+    <%= paginate @boards %>
+  </div>
+<% else %>
+  <p>There are no boards to display.</p>
+<% end %>

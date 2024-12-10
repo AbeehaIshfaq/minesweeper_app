@@ -536,3 +536,2598 @@ Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.7ms | Allocations: 3689)
 Started POST "/boards" for 127.0.0.1 at 2024-12-11 00:59:43 +0500
 Processing by BoardsController#create as HTML
   Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"4@g.c", "name"=>"3", "width"=>"1", "height"=>"1", "mines"=>"2"}, "commit"=>"Generate Board"}
+Started GET "/" for 127.0.0.1 at 2024-12-11 01:00:35 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2024-12-11 01:00:57 +0500
+  [1m[36mBoard Exists? (403.8ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:42
+  [1m[36mBoard Load (304.1ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:44
+  Rendered boards/new.html.erb within layouts/application (Duration: 1322.1ms | Allocations: 3065733)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 2646.9ms | Allocations: 5912767)
+Completed 200 OK in 3663ms (Views: 2342.3ms | ActiveRecord: 606.9ms | Allocations: 8136075)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 01:01:11 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (514.1ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:42
+  [1m[36mBoard Load (518.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:44
+  Rendered boards/new.html.erb within layouts/application (Duration: 1651.2ms | Allocations: 3901649)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 3095.9ms | Allocations: 7308044)
+Completed 200 OK in 4119ms (Views: 2472.4ms | ActiveRecord: 1032.4ms | Allocations: 9631474)
+
+
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (714.6ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:42
+  [1m[36mBoard Load (304.9ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:44
+  Rendered boards/new.html.erb within layouts/application (Duration: 1732.1ms | Allocations: 3847983)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 3372.8ms | Allocations: 7790397)
+Completed 200 OK in 4407ms (Views: 2771.6ms | ActiveRecord: 914.4ms | Allocations: 10212718)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 01:04:40 +0500
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 01:23:13 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BoardsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1912)
+
+
+  
+SyntaxError (/Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:46: else without rescue is useless
+    else
+    ^~~~
+):
+  
+app/models/board.rb:46: else without rescue is useless
+app/controllers/boards_controller.rb:24:in `index'
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 01:23:43 +0500
+Processing by BoardsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1073)
+
+
+  
+SyntaxError (/Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:46: else without rescue is useless
+      else
+      ^~~~
+):
+  
+app/models/board.rb:46: else without rescue is useless
+app/controllers/boards_controller.rb:24:in `index'
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 01:24:34 +0500
+Processing by BoardsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 994)
+
+
+  
+SyntaxError (/Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:47: syntax error, unexpected end-of-input):
+  
+app/models/board.rb:47: syntax error, unexpected end-of-input
+app/controllers/boards_controller.rb:24:in `index'
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 01:24:43 +0500
+Processing by BoardsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1052)
+
+
+  
+SyntaxError (/Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:47: syntax error, unexpected end-of-input):
+  
+app/models/board.rb:47: syntax error, unexpected end-of-input
+app/controllers/boards_controller.rb:24:in `index'
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 01:25:15 +0500
+Processing by BoardsController#index as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.7ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC[0m
+  ↳ app/views/boards/index.html.erb:3
+  Rendered boards/index.html.erb within layouts/application (Duration: 15.8ms | Allocations: 8152)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 242)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 75.5ms | Allocations: 44552)
+Completed 200 OK in 160ms (Views: 73.7ms | ActiveRecord: 60.2ms | Allocations: 55789)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 01:25:18 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:46
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:48
+  Rendered boards/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 4828)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 6014)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.7ms | Allocations: 6373)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 01:25:43 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"s@g.c", "name"=>"a", "width"=>"1", "height"=>"1", "mines"=>"2"}, "commit"=>"Generate Board"}
+Attempting to save board...
+Validation failed: Mines cannot be greater than the total number of cells (width * height)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:46
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:48
+  Rendered boards/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3068)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 4244)
+Completed 422 Unprocessable Content in 16ms (Views: 11.7ms | ActiveRecord: 0.7ms | Allocations: 5902)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 01:26:20 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"s@g.c", "name"=>"a", "width"=>"1", "height"=>"1", "mines"=>"2"}, "commit"=>"Generate Board"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+Attempting to save board...
+Validation failed: Mines cannot be greater than the total number of cells (width * height)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:43
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:45
+  Rendered boards/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3097)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 232)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 20074)
+Completed 422 Unprocessable Content in 40ms (Views: 27.8ms | ActiveRecord: 3.2ms | Allocations: 26596)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 01:27:10 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"s@g.c", "name"=>"a", "width"=>"1", "height"=>"1", "mines"=>"2"}, "commit"=>"Generate Board"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+Attempting to save board...
+Validation failed: Mines cannot be greater than the total number of cells (width * height)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:43
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:45
+  Rendered boards/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3100)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 236)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 20255)
+Completed 422 Unprocessable Content in 50ms (Views: 38.3ms | ActiveRecord: 3.2ms | Allocations: 26733)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 01:27:17 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"s@g.c", "name"=>"a", "width"=>"1", "height"=>"1", "mines"=>"2"}, "commit"=>"Generate Board"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+Attempting to save board...
+Validation failed: Mines cannot be greater than the total number of cells (width * height)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:42
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:44
+  Rendered boards/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3075)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 232)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 20042)
+Completed 422 Unprocessable Content in 35ms (Views: 22.6ms | ActiveRecord: 3.4ms | Allocations: 26607)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 01:27:43 +0500
+Processing by BoardsController#index as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC[0m
+  ↳ app/views/boards/index.html.erb:3
+  Rendered boards/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 4079)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 234)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 21307)
+Completed 200 OK in 41ms (Views: 33.6ms | ActiveRecord: 2.9ms | Allocations: 23654)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 01:27:52 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"s@g.c", "name"=>"a", "width"=>"1", "height"=>"1", "mines"=>"2"}, "commit"=>"Generate Board"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+Attempting to save board...
+Validation failed: Mines cannot be greater than the total number of cells (width * height)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:42
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:44
+  Rendered boards/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3074)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 232)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 20088)
+Completed 422 Unprocessable Content in 35ms (Views: 23.2ms | ActiveRecord: 3.2ms | Allocations: 26650)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 01:28:44 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"s@g.c", "name"=>"a", "width"=>"1", "height"=>"1", "mines"=>"2"}, "commit"=>"Generate Board"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+Attempting to save board...
+Validation failed: Mines cannot be greater than the total number of cells (width * height)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:43
+  Rendered boards/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3072)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 236)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 20129)
+Completed 422 Unprocessable Content in 47ms (Views: 36.2ms | ActiveRecord: 3.0ms | Allocations: 26586)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 01:30:11 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"s@g.c", "name"=>"a", "width"=>"1", "height"=>"1", "mines"=>"2"}, "commit"=>"Generate Board"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+Attempting to save board...
+Validation failed: Mines cannot be greater than the total number of cells (width * height)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:43
+  Rendered boards/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3070)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 232)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 20093)
+Completed 422 Unprocessable Content in 47ms (Views: 32.5ms | ActiveRecord: 4.4ms | Allocations: 26623)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 01:30:34 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"s@g.c", "name"=>"a", "width"=>"1", "height"=>"1", "mines"=>"2"}, "commit"=>"Generate Board"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+Attempting to save board...
+Validation failed: Mines cannot be greater than the total number of cells 
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:43
+  Rendered boards/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 3069)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 232)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 20217)
+Completed 422 Unprocessable Content in 44ms (Views: 29.4ms | ActiveRecord: 3.3ms | Allocations: 26909)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 01:48:28 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"s@g.c", "name"=>"a", "width"=>"5", "height"=>"5", "mines"=>"10"}, "commit"=>"Generate Board"}
+Attempting to save board...
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/boards_controller.rb:9:in `create'
+  [1m[36mBoard Create (60.0ms)[0m  [1m[32mINSERT INTO "boards" ("name", "email", "width", "height", "mines", "grid", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "a"], ["email", "s@g.c"], ["width", 5], ["height", 5], ["mines", 10], ["grid", "[[\"M\",2,1,0,0],[3,\"M\",4,2,1],[2,\"M\",\"M\",\"M\",3],[2,4,\"M\",\"M\",\"M\"],[\"M\",2,3,\"M\",3]]"], ["created_at", "2024-12-10 20:48:28.277412"], ["updated_at", "2024-12-10 20:48:28.277412"]]
+  ↳ app/controllers/boards_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (44.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/boards_controller.rb:9:in `create'
+Redirected to http://127.0.0.1:3000/boards/4
+Completed 302 Found in 111ms (ActiveRecord: 156.4ms | Allocations: 5945)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 01:48:28 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 394)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 72)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1791)
+Completed 200 OK in 17ms (Views: 4.7ms | ActiveRecord: 0.5ms | Allocations: 5515)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 01:59:25 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 496)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 236)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 17751)
+Completed 200 OK in 78ms (Views: 36.9ms | ActiveRecord: 25.0ms | Allocations: 26714)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 02:02:26 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 486)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 232)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 17730)
+Completed 200 OK in 35ms (Views: 19.6ms | ActiveRecord: 6.0ms | Allocations: 24230)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 02:07:43 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 490)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 232)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 17878)
+Completed 200 OK in 39ms (Views: 26.6ms | ActiveRecord: 3.0ms | Allocations: 24356)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 02:07:53 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 486)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 232)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 17616)
+Completed 200 OK in 31ms (Views: 19.8ms | ActiveRecord: 2.9ms | Allocations: 24128)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:07:57 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Load (0.9ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC[0m
+  ↳ app/views/boards/index.html.erb:3
+  Rendered boards/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 886)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2244)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.9ms | Allocations: 2599)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 02:30:51 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+  [1m[36mBoard Load (0.5ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 487)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 232)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 17871)
+Completed 200 OK in 93ms (Views: 25.0ms | ActiveRecord: 52.5ms | Allocations: 26829)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 02:31:34 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:43
+  Rendered boards/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3087)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4271)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.7ms | Allocations: 4598)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 02:36:45 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:43
+  Rendered boards/new.html.erb within layouts/application (Duration: 27.3ms | Allocations: 7910)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 246)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 80.8ms | Allocations: 44040)
+Completed 200 OK in 145ms (Views: 85.6ms | ActiveRecord: 11.1ms | Allocations: 64316)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 02:36:55 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"", "name"=>"", "width"=>"", "height"=>"", "mines"=>""}, "commit"=>"Generate Board"}
+Attempting to save board...
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2595)
+
+
+  
+NoMethodError (undefined method `*' for nil:NilClass):
+  
+app/models/board.rb:9:in `mines_less_than_or_equal_to_cells'
+app/controllers/boards_controller.rb:9:in `create'
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 02:37:34 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"", "name"=>"", "width"=>"", "height"=>"", "mines"=>""}, "commit"=>"Generate Board"}
+Attempting to save board...
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2172)
+
+
+  
+NoMethodError (undefined method `*' for nil:NilClass):
+  
+app/models/board.rb:9:in `mines_less_than_or_equal_to_cells'
+app/controllers/boards_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2024-12-11 02:40:01 +0500
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1584)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1687)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.9ms | Allocations: 7322)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5">
+  <h1 class="mb-4 text-center">Generate a New Board</h1>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+<%= form_with model: @board, url: boards_path, method: :post do |f| %>
+    <% if @board.errors.any? %>
+    <div class="alert alert-danger">
+      <ul>
+        <% @board.errors.full_messages.each do |message| %>
+          <%= message %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+        <div class="mb-3">
+          <%= f.label :email, class: "form-label" %>
+          <%= f.email_field :email, class: "form-control" required: true  %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :name, class: "form-label" %>
+          <%= f.text_field :name, class: "form-control" required: true  %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :width, class: "form-label" %>
+          <%= f.number_field :width, class: "form-control" , min: 1 , required: true %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :height, class: "form-label" %>
+          <%= f.number_field :height, class: "form-control", min: 1, required: true  %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :mines, class: "form-label" %>
+          <%= f.number_field :mines, class: "form-control", min: 1, required: true  %>
+        </div>
+        <%= f.submit "Generate Board", class: "btn btn-dark w-100" %>
+      <% end %>
+    </div>
+  </div>
+
+  <h2 class="mt-5">Recent Boards</h2>
+  <% if Board.any? %>
+  <ul class="list-group">
+    <% Board.order(created_at: :desc).limit(10).each do |board| %>
+      <li class="list-group-item">
+        <strong><%= link_to board.name, board %></strong> 
+        by <%= board.email %> 
+        on <%= board.created_at.strftime("%B %d, %Y %H:%M") %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p class="mt-3">There are no boards to display.</p>
+<% end %>
+</div>
+<div class="mb-5"></div>
+
+):
+1:    <div class="container mt-5">
+2:      <h1 class="mb-4 text-center">Generate a New Board</h1>
+3:      <div class="row justify-content-center">
+4:        <div class="col-md-6">
+5:    <%= form_with model: @board, url: boards_path, method: :post do |f| %>
+6:        <% if @board.errors.any? %>
+7:        <div class="alert alert-danger">
+8:          <ul>
+9:            <% @board.errors.full_messages.each do |message| %>
+10:              <%= message %>
+11:            <% end %>
+12:          </ul>
+13:        </div>
+14:      <% end %>
+15:            <div class="mb-3">
+16:              <%= f.label :email, class: "form-label" %>
+17:              <%= f.email_field :email, class: "form-control" required: true  %>
+18:            </div>
+19:            <div class="mb-3">
+20:              <%= f.label :name, class: "form-label" %>
+21:              <%= f.text_field :name, class: "form-control" required: true  %>
+22:            </div>
+23:            <div class="mb-3">
+24:              <%= f.label :width, class: "form-label" %>
+25:              <%= f.number_field :width, class: "form-control" , min: 1 , required: true %>
+26:            </div>
+27:            <div class="mb-3">
+28:              <%= f.label :height, class: "form-label" %>
+29:              <%= f.number_field :height, class: "form-control", min: 1, required: true  %>
+30:            </div>
+31:            <div class="mb-3">
+32:              <%= f.label :mines, class: "form-label" %>
+33:              <%= f.number_field :mines, class: "form-control", min: 1, required: true  %>
+34:            </div>
+35:            <%= f.submit "Generate Board", class: "btn btn-dark w-100" %>
+36:          <% end %>
+37:        </div>
+38:      </div>
+39:    
+40:      <h2 class="mt-5">Recent Boards</h2>
+41:      <% if Board.any? %>
+42:      <ul class="list-group">
+43:        <% Board.order(created_at: :desc).limit(10).each do |board| %>
+44:          <li class="list-group-item">
+45:            <strong><%= link_to board.name, board %></strong> 
+46:            by <%= board.email %> 
+47:            on <%= board.created_at.strftime("%B %d, %Y %H:%M") %>
+48:          </li>
+49:        <% end %>
+50:      </ul>
+51:    <% else %>
+52:      <p class="mt-3">There are no boards to display.</p>
+53:    <% end %>
+54:    </div>
+55:    <div class="mb-5"></div>
+  
+app/views/boards/new.html.erb:17: syntax error, unexpected local variable or method, expecting ')'
+app/views/boards/new.html.erb:21: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/" for 127.0.0.1 at 2024-12-11 02:40:42 +0500
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:4)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:43
+  Rendered boards/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3246)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 234)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 20479)
+Completed 200 OK in 48ms (Views: 37.0ms | ActiveRecord: 3.5ms | Allocations: 26072)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 02:43:22 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"a@g.c", "name"=>"a", "width"=>"1", "height"=>"1", "mines"=>"1"}, "commit"=>"Generate Board"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+Attempting to save board...
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/boards_controller.rb:9:in `create'
+  [1m[36mBoard Create (1.6ms)[0m  [1m[32mINSERT INTO "boards" ("name", "email", "width", "height", "mines", "grid", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "a"], ["email", "a@g.c"], ["width", 1], ["height", 1], ["mines", 1], ["grid", "[[\"M\"]]"], ["created_at", "2024-12-10 21:43:22.955352"], ["updated_at", "2024-12-10 21:43:22.955352"]]
+  ↳ app/controllers/boards_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (13.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/boards_controller.rb:9:in `create'
+Redirected to http://127.0.0.1:3000/boards/5
+Completed 302 Found in 35ms (ActiveRecord: 17.8ms | Allocations: 8435)
+
+
+Started GET "/boards/5" for 127.0.0.1 at 2024-12-11 02:43:22 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 409)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 232)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 17654)
+Completed 200 OK in 32ms (Views: 26.3ms | ActiveRecord: 0.2ms | Allocations: 20385)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:43:27 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:4
+  Rendered boards/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2173)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3553)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.5ms | Allocations: 4115)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:44:09 +0500
+Processing by BoardsController#index as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:4
+  [1m[36mBoard Count (46.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:14
+  Rendered boards/index.html.erb within layouts/application (Duration: 67.0ms | Allocations: 8199)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 235)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 90.5ms | Allocations: 25396)
+Completed 200 OK in 98ms (Views: 43.2ms | ActiveRecord: 50.2ms | Allocations: 28281)
+
+
+Started GET "/boards?page=2" for 127.0.0.1 at 2024-12-11 02:44:35 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:4
+  [1m[36mBoard Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:14
+  Rendered boards/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 3399)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4784)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.9ms | Allocations: 5141)
+
+
+Started GET "/boards?page=3" for 127.0.0.1 at 2024-12-11 02:44:37 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 4]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 4]]
+  ↳ app/views/boards/index.html.erb:4
+  Rendered boards/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2041)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3410)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.6ms | Allocations: 3762)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:44:39 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:4
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:14
+  Rendered boards/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2593)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3955)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.7ms | Allocations: 4307)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 02:44:41 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:43
+  Rendered boards/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3100)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 4286)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.6ms | Allocations: 4616)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 02:45:34 +0500
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 2]]
+  ↳ app/views/boards/new.html.erb:43
+  Rendered boards/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3139)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 232)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 20164)
+Completed 200 OK in 41ms (Views: 29.8ms | ActiveRecord: 3.1ms | Allocations: 26015)
+
+
+Started GET "/boards/5" for 127.0.0.1 at 2024-12-11 02:48:08 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"5"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 401)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 232)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 17771)
+Completed 200 OK in 45ms (Views: 26.1ms | ActiveRecord: 4.0ms | Allocations: 24592)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:48:10 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2448)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 72)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3825)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.8ms | Allocations: 4369)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:48:52 +0500
+Processing by BoardsController#index as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 7623)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 237)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 43.3ms | Allocations: 24760)
+Completed 200 OK in 56ms (Views: 43.6ms | ActiveRecord: 4.3ms | Allocations: 27648)
+
+
+Started GET "/boards?page=2" for 127.0.0.1 at 2024-12-11 02:48:55 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 3284)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4637)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.7ms | Allocations: 4994)
+
+
+Started GET "/boards?page=3" for 127.0.0.1 at 2024-12-11 02:48:56 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 4]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 4]]
+  ↳ app/views/boards/index.html.erb:14
+  Rendered boards/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2007)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3390)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.6ms | Allocations: 3742)
+
+
+Started GET "/boards?page=2" for 127.0.0.1 at 2024-12-11 02:48:57 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 2908)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 4295)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.8ms | Allocations: 4648)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:48:59 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2524)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3900)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.7ms | Allocations: 4252)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:50:10 +0500
+Processing by BoardsController#index as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 7690)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 238)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 25059)
+Completed 200 OK in 45ms (Views: 35.5ms | ActiveRecord: 3.2ms | Allocations: 27948)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:50:11 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2522)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3893)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.7ms | Allocations: 4250)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 02:50:14 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:43
+  Rendered boards/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3102)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4288)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.6ms | Allocations: 4619)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:50:19 +0500
+Processing by BoardsController#index as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 7635)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 239)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 25050)
+Completed 200 OK in 50ms (Views: 40.3ms | ActiveRecord: 3.5ms | Allocations: 27937)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:51:25 +0500
+Processing by BoardsController#index as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 7699)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 237)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 24913)
+Completed 200 OK in 49ms (Views: 37.6ms | ActiveRecord: 4.0ms | Allocations: 27802)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:52:32 +0500
+Processing by BoardsController#index as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 20.2ms | Allocations: 7721)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 231)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 44.6ms | Allocations: 25064)
+Completed 200 OK in 52ms (Views: 44.0ms | ActiveRecord: 3.3ms | Allocations: 27951)
+
+
+Started GET "/boards/5" for 127.0.0.1 at 2024-12-11 02:52:34 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 363)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1714)
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 3037)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:52:36 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2568)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3933)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.7ms | Allocations: 4289)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:54:10 +0500
+Processing by BoardsController#index as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 7782)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 231)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 37.4ms | Allocations: 24948)
+Completed 200 OK in 47ms (Views: 37.2ms | ActiveRecord: 3.3ms | Allocations: 27837)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:54:11 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2568)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3930)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.7ms | Allocations: 4287)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:54:35 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2566)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3940)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.7ms | Allocations: 4292)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 02:54:48 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:43
+  Rendered boards/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 3107)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 4296)
+Completed 200 OK in 15ms (Views: 9.0ms | ActiveRecord: 0.6ms | Allocations: 4627)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:55:46 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:14
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:27
+  Rendered boards/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2566)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3945)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.7ms | Allocations: 4296)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 02:57:16 +0500
+Processing by BoardsController#index as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 15.2ms | Allocations: 7805)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 231)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 25066)
+Completed 200 OK in 48ms (Views: 38.1ms | ActiveRecord: 3.5ms | Allocations: 27955)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 02:59:23 +0500
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  Rendered boards/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3411)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3503)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 2.8ms | Allocations: 9304)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    49:     </tr>
+    50:   </thead>
+    51:   <tbody>
+    52:     <% @boards.each do |board| %>
+    53:       <tr>
+    54:         <td><%= link_to board.name, board %></td>
+    55:         <td><%= board.email %></td>
+  
+app/views/boards/new.html.erb:52
+Started GET "/" for 127.0.0.1 at 2024-12-11 03:00:36 +0500
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:43
+  Rendered boards/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 4104)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 4199)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 3.2ms | Allocations: 10033)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    54:     </tr>
+    55:   </thead>
+    56:   <tbody>
+    57:     <% @boards.each do |board| %>
+    58:       <tr>
+    59:         <td><%= link_to board.name, board %></td>
+    60:         <td><%= board.email %></td>
+  
+app/views/boards/new.html.erb:57
+app/views/boards/new.html.erb:43
+Started GET "/" for 127.0.0.1 at 2024-12-11 03:00:38 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:43
+  Rendered boards/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3140)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3231)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.5ms | Allocations: 3480)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    54:     </tr>
+    55:   </thead>
+    56:   <tbody>
+    57:     <% @boards.each do |board| %>
+    58:       <tr>
+    59:         <td><%= link_to board.name, board %></td>
+    60:         <td><%= board.email %></td>
+  
+app/views/boards/new.html.erb:57
+app/views/boards/new.html.erb:43
+Started GET "/" for 127.0.0.1 at 2024-12-11 03:01:04 +0500
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1678)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1781)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.7ms | Allocations: 7652)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5">
+  <h1 class="mb-4 text-center">Generate a New Board</h1>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+<%= form_with model: @board, url: boards_path, method: :post do |f| %>
+    <% if @board.errors.any? %>
+    <div class="alert alert-danger">
+      <ul>
+        <% @board.errors.full_messages.each do |message| %>
+          <%= message %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+        <div class="mb-3">
+          <%= f.label :email, class: "form-label" %>
+          <%= f.email_field :email, class: "form-control", required: true  %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :name, class: "form-label" %>
+          <%= f.text_field :name, class: "form-control", required: true  %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :width, class: "form-label" %>
+          <%= f.number_field :width, class: "form-control" , min: 1 , required: true %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :height, class: "form-label" %>
+          <%= f.number_field :height, class: "form-control", min: 1, required: true  %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :mines, class: "form-label" %>
+          <%= f.number_field :mines, class: "form-control", min: 1, required: true  %>
+        </div>
+        <%= f.submit "Generate Board", class: "btn btn-dark w-100" %>
+      <% end %>
+    </div>
+  </div>
+
+  <h2 class="mt-5">Recent Boards</h2>
+  <% if Board.any? %>
+  <ul class="list-group">
+    <% Board.order(created_at: :desc).limit(10).each do |board| %>
+       <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Board Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Width</th>
+      <th scope="col">Height</th>
+      <th scope="col">Mines</th>
+      <th scope="col">Created At</th>
+
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><%= link_to board.name, board %></td>
+        <td><%= board.email %></td>
+        <td><%= board.width %></td>
+        <td><%= board.height %></td>
+        <td><%= board.mines %></td>
+        <td><%= board.created_at.strftime("%B %d, %Y %H:%M") %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+    <% end %>
+  </ul>
+<% else %>
+  <p class="mt-3">There are no boards to display.</p>
+<% end %>
+</div>
+<div class="mb-5"></div>
+
+):
+1:    <div class="container mt-5">
+2:      <h1 class="mb-4 text-center">Generate a New Board</h1>
+3:      <div class="row justify-content-center">
+4:        <div class="col-md-6">
+5:    <%= form_with model: @board, url: boards_path, method: :post do |f| %>
+6:        <% if @board.errors.any? %>
+7:        <div class="alert alert-danger">
+8:          <ul>
+9:            <% @board.errors.full_messages.each do |message| %>
+10:              <%= message %>
+11:            <% end %>
+12:          </ul>
+13:        </div>
+14:      <% end %>
+15:            <div class="mb-3">
+16:              <%= f.label :email, class: "form-label" %>
+17:              <%= f.email_field :email, class: "form-control", required: true  %>
+18:            </div>
+19:            <div class="mb-3">
+20:              <%= f.label :name, class: "form-label" %>
+21:              <%= f.text_field :name, class: "form-control", required: true  %>
+22:            </div>
+23:            <div class="mb-3">
+24:              <%= f.label :width, class: "form-label" %>
+25:              <%= f.number_field :width, class: "form-control" , min: 1 , required: true %>
+26:            </div>
+27:            <div class="mb-3">
+28:              <%= f.label :height, class: "form-label" %>
+29:              <%= f.number_field :height, class: "form-control", min: 1, required: true  %>
+30:            </div>
+31:            <div class="mb-3">
+32:              <%= f.label :mines, class: "form-label" %>
+33:              <%= f.number_field :mines, class: "form-control", min: 1, required: true  %>
+34:            </div>
+35:            <%= f.submit "Generate Board", class: "btn btn-dark w-100" %>
+36:          <% end %>
+37:        </div>
+38:      </div>
+39:    
+40:      <h2 class="mt-5">Recent Boards</h2>
+41:      <% if Board.any? %>
+42:      <ul class="list-group">
+43:        <% Board.order(created_at: :desc).limit(10).each do |board| %>
+44:           <table class="table table-bordered">
+45:      <thead>
+46:        <tr>
+47:          <th scope="col">Board Name</th>
+48:          <th scope="col">Email</th>
+49:          <th scope="col">Width</th>
+50:          <th scope="col">Height</th>
+51:          <th scope="col">Mines</th>
+52:          <th scope="col">Created At</th>
+53:    
+54:        </tr>
+55:      </thead>
+56:      <tbody>
+57:          <tr>
+58:            <td><%= link_to board.name, board %></td>
+59:            <td><%= board.email %></td>
+60:            <td><%= board.width %></td>
+61:            <td><%= board.height %></td>
+62:            <td><%= board.mines %></td>
+63:            <td><%= board.created_at.strftime("%B %d, %Y %H:%M") %></td>
+64:          </tr>
+65:        <% end %>
+66:      </tbody>
+67:    </table>
+68:        <% end %>
+69:      </ul>
+70:    <% else %>
+71:      <p class="mt-3">There are no boards to display.</p>
+72:    <% end %>
+73:    </div>
+74:    <div class="mb-5"></div>
+  
+app/views/boards/new.html.erb:70: else without rescue is useless
+app/views/boards/new.html.erb:77: syntax error, unexpected `end'
+Started GET "/" for 127.0.0.1 at 2024-12-11 03:01:06 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1665)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1767)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2053)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5">
+  <h1 class="mb-4 text-center">Generate a New Board</h1>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+<%= form_with model: @board, url: boards_path, method: :post do |f| %>
+    <% if @board.errors.any? %>
+    <div class="alert alert-danger">
+      <ul>
+        <% @board.errors.full_messages.each do |message| %>
+          <%= message %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+        <div class="mb-3">
+          <%= f.label :email, class: "form-label" %>
+          <%= f.email_field :email, class: "form-control", required: true  %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :name, class: "form-label" %>
+          <%= f.text_field :name, class: "form-control", required: true  %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :width, class: "form-label" %>
+          <%= f.number_field :width, class: "form-control" , min: 1 , required: true %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :height, class: "form-label" %>
+          <%= f.number_field :height, class: "form-control", min: 1, required: true  %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :mines, class: "form-label" %>
+          <%= f.number_field :mines, class: "form-control", min: 1, required: true  %>
+        </div>
+        <%= f.submit "Generate Board", class: "btn btn-dark w-100" %>
+      <% end %>
+    </div>
+  </div>
+
+  <h2 class="mt-5">Recent Boards</h2>
+  <% if Board.any? %>
+  <ul class="list-group">
+    <% Board.order(created_at: :desc).limit(10).each do |board| %>
+       <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Board Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Width</th>
+      <th scope="col">Height</th>
+      <th scope="col">Mines</th>
+      <th scope="col">Created At</th>
+
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><%= link_to board.name, board %></td>
+        <td><%= board.email %></td>
+        <td><%= board.width %></td>
+        <td><%= board.height %></td>
+        <td><%= board.mines %></td>
+        <td><%= board.created_at.strftime("%B %d, %Y %H:%M") %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+    <% end %>
+  </ul>
+<% else %>
+  <p class="mt-3">There are no boards to display.</p>
+<% end %>
+</div>
+<div class="mb-5"></div>
+
+):
+1:    <div class="container mt-5">
+2:      <h1 class="mb-4 text-center">Generate a New Board</h1>
+3:      <div class="row justify-content-center">
+4:        <div class="col-md-6">
+5:    <%= form_with model: @board, url: boards_path, method: :post do |f| %>
+6:        <% if @board.errors.any? %>
+7:        <div class="alert alert-danger">
+8:          <ul>
+9:            <% @board.errors.full_messages.each do |message| %>
+10:              <%= message %>
+11:            <% end %>
+12:          </ul>
+13:        </div>
+14:      <% end %>
+15:            <div class="mb-3">
+16:              <%= f.label :email, class: "form-label" %>
+17:              <%= f.email_field :email, class: "form-control", required: true  %>
+18:            </div>
+19:            <div class="mb-3">
+20:              <%= f.label :name, class: "form-label" %>
+21:              <%= f.text_field :name, class: "form-control", required: true  %>
+22:            </div>
+23:            <div class="mb-3">
+24:              <%= f.label :width, class: "form-label" %>
+25:              <%= f.number_field :width, class: "form-control" , min: 1 , required: true %>
+26:            </div>
+27:            <div class="mb-3">
+28:              <%= f.label :height, class: "form-label" %>
+29:              <%= f.number_field :height, class: "form-control", min: 1, required: true  %>
+30:            </div>
+31:            <div class="mb-3">
+32:              <%= f.label :mines, class: "form-label" %>
+33:              <%= f.number_field :mines, class: "form-control", min: 1, required: true  %>
+34:            </div>
+35:            <%= f.submit "Generate Board", class: "btn btn-dark w-100" %>
+36:          <% end %>
+37:        </div>
+38:      </div>
+39:    
+40:      <h2 class="mt-5">Recent Boards</h2>
+41:      <% if Board.any? %>
+42:      <ul class="list-group">
+43:        <% Board.order(created_at: :desc).limit(10).each do |board| %>
+44:           <table class="table table-bordered">
+45:      <thead>
+46:        <tr>
+47:          <th scope="col">Board Name</th>
+48:          <th scope="col">Email</th>
+49:          <th scope="col">Width</th>
+50:          <th scope="col">Height</th>
+51:          <th scope="col">Mines</th>
+52:          <th scope="col">Created At</th>
+53:    
+54:        </tr>
+55:      </thead>
+56:      <tbody>
+57:          <tr>
+58:            <td><%= link_to board.name, board %></td>
+59:            <td><%= board.email %></td>
+60:            <td><%= board.width %></td>
+61:            <td><%= board.height %></td>
+62:            <td><%= board.mines %></td>
+63:            <td><%= board.created_at.strftime("%B %d, %Y %H:%M") %></td>
+64:          </tr>
+65:        <% end %>
+66:      </tbody>
+67:    </table>
+68:        <% end %>
+69:      </ul>
+70:    <% else %>
+71:      <p class="mt-3">There are no boards to display.</p>
+72:    <% end %>
+73:    </div>
+74:    <div class="mb-5"></div>
+  
+app/views/boards/new.html.erb:70: else without rescue is useless
+app/views/boards/new.html.erb:77: syntax error, unexpected `end'
+Started GET "/" for 127.0.0.1 at 2024-12-11 03:01:49 +0500
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1620)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1723)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.6ms | Allocations: 7594)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5">
+  <h1 class="mb-4 text-center">Generate a New Board</h1>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+<%= form_with model: @board, url: boards_path, method: :post do |f| %>
+    <% if @board.errors.any? %>
+    <div class="alert alert-danger">
+      <ul>
+        <% @board.errors.full_messages.each do |message| %>
+          <%= message %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+        <div class="mb-3">
+          <%= f.label :email, class: "form-label" %>
+          <%= f.email_field :email, class: "form-control", required: true  %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :name, class: "form-label" %>
+          <%= f.text_field :name, class: "form-control", required: true  %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :width, class: "form-label" %>
+          <%= f.number_field :width, class: "form-control" , min: 1 , required: true %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :height, class: "form-label" %>
+          <%= f.number_field :height, class: "form-control", min: 1, required: true  %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :mines, class: "form-label" %>
+          <%= f.number_field :mines, class: "form-control", min: 1, required: true  %>
+        </div>
+        <%= f.submit "Generate Board", class: "btn btn-dark w-100" %>
+      <% end %>
+    </div>
+  </div>
+
+  <h2 class="mt-5">Recent Boards</h2>
+  <% if Board.any? %>
+  <ul class="list-group">
+       <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Board Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Width</th>
+      <th scope="col">Height</th>
+      <th scope="col">Mines</th>
+      <th scope="col">Created At</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <% Board.order(created_at: :desc).limit(10).each do |board| %>
+      <tr>
+        <td><%= link_to board.name, board %></td>
+        <td><%= board.email %></td>
+        <td><%= board.width %></td>
+        <td><%= board.height %></td>
+        <td><%= board.mines %></td>
+        <td><%= board.created_at.strftime("%B %d, %Y %H:%M") %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+    <% end %>
+  </ul>
+<% else %>
+  <p class="mt-3">There are no boards to display.</p>
+<% end %>
+</div>
+<div class="mb-5"></div>
+
+):
+1:    <div class="container mt-5">
+2:      <h1 class="mb-4 text-center">Generate a New Board</h1>
+3:      <div class="row justify-content-center">
+4:        <div class="col-md-6">
+5:    <%= form_with model: @board, url: boards_path, method: :post do |f| %>
+6:        <% if @board.errors.any? %>
+7:        <div class="alert alert-danger">
+8:          <ul>
+9:            <% @board.errors.full_messages.each do |message| %>
+10:              <%= message %>
+11:            <% end %>
+12:          </ul>
+13:        </div>
+14:      <% end %>
+15:            <div class="mb-3">
+16:              <%= f.label :email, class: "form-label" %>
+17:              <%= f.email_field :email, class: "form-control", required: true  %>
+18:            </div>
+19:            <div class="mb-3">
+20:              <%= f.label :name, class: "form-label" %>
+21:              <%= f.text_field :name, class: "form-control", required: true  %>
+22:            </div>
+23:            <div class="mb-3">
+24:              <%= f.label :width, class: "form-label" %>
+25:              <%= f.number_field :width, class: "form-control" , min: 1 , required: true %>
+26:            </div>
+27:            <div class="mb-3">
+28:              <%= f.label :height, class: "form-label" %>
+29:              <%= f.number_field :height, class: "form-control", min: 1, required: true  %>
+30:            </div>
+31:            <div class="mb-3">
+32:              <%= f.label :mines, class: "form-label" %>
+33:              <%= f.number_field :mines, class: "form-control", min: 1, required: true  %>
+34:            </div>
+35:            <%= f.submit "Generate Board", class: "btn btn-dark w-100" %>
+36:          <% end %>
+37:        </div>
+38:      </div>
+39:    
+40:      <h2 class="mt-5">Recent Boards</h2>
+41:      <% if Board.any? %>
+42:      <ul class="list-group">
+43:           <table class="table table-bordered">
+44:      <thead>
+45:        <tr>
+46:          <th scope="col">Board Name</th>
+47:          <th scope="col">Email</th>
+48:          <th scope="col">Width</th>
+49:          <th scope="col">Height</th>
+50:          <th scope="col">Mines</th>
+51:          <th scope="col">Created At</th>
+52:    
+53:        </tr>
+54:      </thead>
+55:      <tbody>
+56:        <% Board.order(created_at: :desc).limit(10).each do |board| %>
+57:          <tr>
+58:            <td><%= link_to board.name, board %></td>
+59:            <td><%= board.email %></td>
+60:            <td><%= board.width %></td>
+61:            <td><%= board.height %></td>
+62:            <td><%= board.mines %></td>
+63:            <td><%= board.created_at.strftime("%B %d, %Y %H:%M") %></td>
+64:          </tr>
+65:        <% end %>
+66:      </tbody>
+67:    </table>
+68:        <% end %>
+69:      </ul>
+70:    <% else %>
+71:      <p class="mt-3">There are no boards to display.</p>
+72:    <% end %>
+73:    </div>
+74:    <div class="mb-5"></div>
+  
+app/views/boards/new.html.erb:70: else without rescue is useless
+app/views/boards/new.html.erb:77: syntax error, unexpected `end'
+Started GET "/" for 127.0.0.1 at 2024-12-11 03:02:37 +0500
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:43
+  Rendered boards/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 3322)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 230)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 20516)
+Completed 200 OK in 51ms (Views: 39.1ms | ActiveRecord: 3.3ms | Allocations: 26363)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 03:03:49 +0500
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:43
+  Rendered boards/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3317)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 230)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 20271)
+Completed 200 OK in 39ms (Views: 27.9ms | ActiveRecord: 3.1ms | Allocations: 26083)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 03:04:47 +0500
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:43
+  [1m[36mCACHE Board Load (0.0ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:63
+  Rendered boards/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 4133)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 234)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 21334)
+Completed 200 OK in 48ms (Views: 37.9ms | ActiveRecord: 3.0ms | Allocations: 27123)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 03:05:07 +0500
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:54
+  Rendered boards/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3385)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 230)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 20344)
+Completed 200 OK in 45ms (Views: 31.0ms | ActiveRecord: 3.4ms | Allocations: 26194)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 03:05:19 +0500
+Processing by BoardsController#index as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 20.7ms | Allocations: 7862)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 231)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 25248)
+Completed 200 OK in 48ms (Views: 37.1ms | ActiveRecord: 3.2ms | Allocations: 28135)
+
+
+Started GET "/boards?page=2" for 127.0.0.1 at 2024-12-11 03:05:20 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 3365)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4724)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.9ms | Allocations: 5081)
+
+
+Started GET "/boards?page=3" for 127.0.0.1 at 2024-12-11 03:05:21 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 4]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 4]]
+  ↳ app/views/boards/index.html.erb:16
+  Rendered boards/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2047)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3412)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.6ms | Allocations: 3764)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 03:05:23 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:54
+  Rendered boards/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3178)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 4364)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.6ms | Allocations: 4694)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:05:52 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 447)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 59)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1806)
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 3104)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 03:10:23 +0500
+Processing by BoardsController#index as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 7845)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 200)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 1053.3ms | Allocations: 53507)
+Completed 200 OK in 1061ms (Views: 1052.5ms | ActiveRecord: 3.5ms | Allocations: 56396)
+
+
+Started GET "/boards?page=2" for 127.0.0.1 at 2024-12-11 03:10:26 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 3364)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4729)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.8ms | Allocations: 5086)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 03:10:31 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2600)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3953)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.8ms | Allocations: 4305)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 03:10:47 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2600)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 674.0ms | Allocations: 28759)
+Completed 200 OK in 676ms (Views: 674.0ms | ActiveRecord: 0.7ms | Allocations: 29111)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 03:11:09 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2600)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 696.2ms | Allocations: 28745)
+Completed 200 OK in 698ms (Views: 695.9ms | ActiveRecord: 1.1ms | Allocations: 29097)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 03:11:26 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2600)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 668.3ms | Allocations: 28759)
+Completed 200 OK in 670ms (Views: 668.3ms | ActiveRecord: 0.7ms | Allocations: 29111)
+
+
+Started GET "/boards?page=2" for 127.0.0.1 at 2024-12-11 03:11:33 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2988)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4344)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.9ms | Allocations: 4696)
+
+
+Started GET "/boards?page=2" for 127.0.0.1 at 2024-12-11 03:12:08 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2988)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 661.3ms | Allocations: 29124)
+Completed 200 OK in 663ms (Views: 661.2ms | ActiveRecord: 0.9ms | Allocations: 29476)
+
+
+Started GET "/boards/3" for 127.0.0.1 at 2024-12-11 03:13:48 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"3"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 845)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 196)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 58.6ms | Allocations: 17953)
+Completed 200 OK in 102ms (Views: 61.6ms | ActiveRecord: 3.1ms | Allocations: 24813)
+
+
+Started GET "/boards/3" for 127.0.0.1 at 2024-12-11 03:14:14 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"3"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 718)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 194)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 17669)
+Completed 200 OK in 37ms (Views: 24.7ms | ActiveRecord: 3.0ms | Allocations: 24546)
+
+
+Started GET "/boards/3" for 127.0.0.1 at 2024-12-11 03:14:33 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"3"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.1ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 721)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 198)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 17811)
+Completed 200 OK in 42ms (Views: 30.4ms | ActiveRecord: 2.8ms | Allocations: 24608)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 03:14:35 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 4631)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 5987)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.8ms | Allocations: 6531)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:14:37 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 447)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1617)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 2274)
+
+
+Started POST "/boards/4" for 127.0.0.1 at 2024-12-11 03:14:40 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/boards/4"):
+  
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:22:30 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 919)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 194)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 17996)
+Completed 200 OK in 80ms (Views: 27.9ms | ActiveRecord: 35.2ms | Allocations: 27755)
+
+
+Started POST "/boards/4" for 127.0.0.1 at 2024-12-11 03:22:38 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/boards/4"):
+  
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:24:07 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 947)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 223)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 18106)
+Completed 200 OK in 39ms (Views: 26.7ms | ActiveRecord: 3.3ms | Allocations: 24965)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:24:56 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 949)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 225)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 18014)
+Completed 200 OK in 44ms (Views: 31.5ms | ActiveRecord: 3.0ms | Allocations: 24812)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:25:22 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 947)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 223)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 677.1ms | Allocations: 42779)
+Completed 200 OK in 691ms (Views: 679.0ms | ActiveRecord: 3.2ms | Allocations: 49695)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:27:43 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 554)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 18346)
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 0.2ms | Allocations: 19005)
+
+
+Started POST "/boards/4" for 127.0.0.1 at 2024-12-11 03:27:44 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/boards/4"):
+  
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:29:26 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 940)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2259)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 3.1ms | Allocations: 9124)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x0000000007f670>):
+    4:     <title>Minesweeper App</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    8:     <%= stylesheet_link_tag "application", media: "all", "data-turbo-track": "reload" %>
+    9:     <%= javascript_importmap_tags %>
+   10:   </head>
+  
+app/views/layouts/application.html.erb:7
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:30:40 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.1ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 938)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 223)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 19372)
+Completed 200 OK in 40ms (Views: 27.6ms | ActiveRecord: 3.0ms | Allocations: 26226)
+
+
+Started POST "/boards/4" for 127.0.0.1 at 2024-12-11 03:30:41 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/boards/4"):
+  
+Started POST "/boards/4" for 127.0.0.1 at 2024-12-11 03:34:14 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/boards/4"):
+  
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:36:08 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 936)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 223)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 19357)
+Completed 200 OK in 88ms (Views: 24.8ms | ActiveRecord: 48.8ms | Allocations: 28690)
+
+
+Started POST "/boards/4" for 127.0.0.1 at 2024-12-11 03:36:10 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/boards/4"):
+  
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:38:14 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 746)
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 227)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 707.6ms | Allocations: 45289)
+Completed 200 OK in 727ms (Views: 710.0ms | ActiveRecord: 6.2ms | Allocations: 52167)
+
+
+Started POST "/boards/4" for 127.0.0.1 at 2024-12-11 03:38:20 +0500
+  
+ActionController::RoutingError (No route matches [POST] "/boards/4"):
+  
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:39:31 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 456)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 228)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 19079)
+Completed 200 OK in 39ms (Views: 25.9ms | ActiveRecord: 3.6ms | Allocations: 25937)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:40:45 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 456)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 232)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 45.4ms | Allocations: 20315)
+Completed 200 OK in 64ms (Views: 47.5ms | ActiveRecord: 3.7ms | Allocations: 27112)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:43:25 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 455)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 228)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 20170)
+Completed 200 OK in 48ms (Views: 34.6ms | ActiveRecord: 3.1ms | Allocations: 27029)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:43:59 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 150)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3048)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 3704)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:46:41 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 150)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 675.3ms | Allocations: 28098)
+Completed 200 OK in 677ms (Views: 675.8ms | ActiveRecord: 0.1ms | Allocations: 28754)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:46:49 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 150)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3168)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 3824)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:47:18 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (0.1ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 150)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 693.8ms | Allocations: 28010)
+Completed 200 OK in 696ms (Views: 694.5ms | ActiveRecord: 0.1ms | Allocations: 28666)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:49:17 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (0.1ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 150)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 19205)
+Completed 200 OK in 35ms (Views: 31.6ms | ActiveRecord: 0.1ms | Allocations: 19861)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:54:48 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 150)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 739.1ms | Allocations: 28022)
+Completed 200 OK in 799ms (Views: 739.7ms | ActiveRecord: 50.8ms | Allocations: 31463)
+
+

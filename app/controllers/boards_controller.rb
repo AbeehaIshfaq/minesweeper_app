@@ -4,21 +4,23 @@ class BoardsController < ApplicationController
     end
   
     def create
-      @board = Board.new(board_params)
-      @board.generate_board
-      if @board.save
-        redirect_to @board
-      else
-        render :new
-      end
+        @board = Board.new(board_params)
+        Rails.logger.debug "Attempting to save board..."
+        if @board.save
+          redirect_to @board, notice: 'Board was successfully created.'
+        else
+          Rails.logger.debug "Validation failed: #{@board.errors.full_messages.join(", ")}"
+          render :new, status: :unprocessable_entity
+        end
     end
+      
   
     def show
       @board = Board.find(params[:id])
     end
   
     def index
-      @boards = Board.all.order(created_at: :desc)
+        @boards = Board.order(created_at: :desc).page(params[:page]).per(2)
     end
   
     private
