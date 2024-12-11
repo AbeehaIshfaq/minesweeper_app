@@ -5,6 +5,11 @@
     color: #282a2c;
     background-color: #f8f9fa;
   }
+  .pagination .page-item.active .page-link {
+    color: white; /* Change the color to indicate selection */
+    background-color: #282a2c; /* Change the background color of the selected page */
+    border: #282a2c;
+  }
   .pagination .page-link:hover {
     background-color: #282a2c;
     color: rgb(247, 239, 239);

@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   # root "posts#index"
   root "boards#new"
   resources :boards, only: [:new, :create, :show, :index]
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
 end

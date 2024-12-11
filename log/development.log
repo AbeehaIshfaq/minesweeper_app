@@ -3131,3 +3131,1373 @@ Processing by BoardsController#show as HTML
 Completed 200 OK in 799ms (Views: 739.7ms | ActiveRecord: 50.8ms | Allocations: 31463)
 
 
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:57:47 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 150)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 701.9ms | Allocations: 44099)
+Completed 200 OK in 705ms (Views: 702.4ms | ActiveRecord: 0.2ms | Allocations: 44755)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:57:59 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 150)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3139)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 3795)
+
+
+Started GET "/boards/4" for 127.0.0.1 at 2024-12-11 03:59:14 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"4"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 459)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 228)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 19090)
+Completed 200 OK in 52ms (Views: 30.9ms | ActiveRecord: 6.7ms | Allocations: 26063)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 03:59:35 +0500
+Processing by BoardsController#index as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 7952)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 195)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 38.3ms | Allocations: 26301)
+Completed 200 OK in 46ms (Views: 37.2ms | ActiveRecord: 3.8ms | Allocations: 29184)
+
+
+Started GET "/boards?page=2" for 127.0.0.1 at 2024-12-11 03:59:38 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 3364)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 6364)
+Completed 200 OK in 17ms (Views: 13.8ms | ActiveRecord: 1.4ms | Allocations: 6721)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 04:00:59 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2600)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 657.8ms | Allocations: 30441)
+Completed 200 OK in 660ms (Views: 657.5ms | ActiveRecord: 1.1ms | Allocations: 30793)
+
+
+Started GET "/boards?page=3" for 127.0.0.1 at 2024-12-11 04:01:05 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 4]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 4]]
+  ↳ app/views/boards/index.html.erb:16
+  Rendered boards/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2047)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 5029)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.6ms | Allocations: 5381)
+
+
+Started GET "/boards?page=3" for 127.0.0.1 at 2024-12-11 04:01:17 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 4]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 4]]
+  ↳ app/views/boards/index.html.erb:16
+  Rendered boards/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2047)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 679.4ms | Allocations: 29925)
+Completed 200 OK in 681ms (Views: 679.4ms | ActiveRecord: 0.6ms | Allocations: 30277)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 04:01:19 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2600)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 5605)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.8ms | Allocations: 5957)
+
+
+Started GET "/boards?page=2" for 127.0.0.1 at 2024-12-11 04:01:21 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2988)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 5991)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.7ms | Allocations: 6344)
+
+
+Started GET "/boards?page=2" for 127.0.0.1 at 2024-12-11 04:01:49 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2988)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 701.1ms | Allocations: 30782)
+Completed 200 OK in 702ms (Views: 700.7ms | ActiveRecord: 0.9ms | Allocations: 31134)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 04:01:52 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2600)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 5585)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.8ms | Allocations: 5937)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 04:02:15 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2600)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 693.9ms | Allocations: 30440)
+Completed 200 OK in 695ms (Views: 693.9ms | ActiveRecord: 0.7ms | Allocations: 30792)
+
+
+Started GET "/boards?page=2" for 127.0.0.1 at 2024-12-11 04:02:19 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2988)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 6013)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.8ms | Allocations: 6365)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 04:02:22 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2600)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 5585)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.7ms | Allocations: 5938)
+
+
+Started GET "/boards?page=2" for 127.0.0.1 at 2024-12-11 04:02:27 +0500
+Processing by BoardsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.1ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 2]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2988)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 5967)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.6ms | Allocations: 6319)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 04:12:13 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (22.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:54
+  Rendered boards/new.html.erb within layouts/application (Duration: 30.7ms | Allocations: 8068)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 207)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 116.1ms | Allocations: 50893)
+Completed 200 OK in 182ms (Views: 120.2ms | ActiveRecord: 12.8ms | Allocations: 71257)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 04:12:42 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"abeeha.ishfaq6@gmail.com", "name"=>"abeeha's board", "width"=>"10", "height"=>"10", "mines"=>"3"}, "commit"=>"Generate Board"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mBoard Create (13.5ms)[0m  [1m[32mINSERT INTO "boards" ("name", "email", "width", "height", "mines", "grid", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "abeeha's board"], ["email", "abeeha.ishfaq6@gmail.com"], ["width", 10], ["height", 10], ["mines", 3], ["grid", "[[0,0,0,0,1,1,1,1,\"M\",1],[0,0,0,0,1,\"M\",1,1,1,1],[0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,1,1,1],[0,0,0,0,0,0,0,1,\"M\",1]]"], ["created_at", "2024-12-10 23:12:42.628477"], ["updated_at", "2024-12-10 23:12:42.628477"]]
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: a964c0ed-4508-4b62-a6ce-f6258b4ce4f6) to Async(default) with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x000000010c136660 @uri=#<URI::GID gid://minesweeper-app/Board/6>>]}
+[ActiveJob] ↳ app/controllers/boards_controller.rb:9:in `create'
+Redirected to http://127.0.0.1:3000/boards/6
+Completed 302 Found in 124ms (ActiveRecord: 14.7ms | Allocations: 28772)
+
+
+Started GET "/boards/6" for 127.0.0.1 at 2024-12-11 04:12:42 +0500
+[ActiveJob] [ActionMailer::MailDeliveryJob] [a964c0ed-4508-4b62-a6ce-f6258b4ce4f6]   [1m[36mBoard Load (0.8ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [a964c0ed-4508-4b62-a6ce-f6258b4ce4f6] Performing ActionMailer::MailDeliveryJob (Job ID: a964c0ed-4508-4b62-a6ce-f6258b4ce4f6) from Async(default) enqueued at 2024-12-10T23:12:42.746999000Z with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x000000010c1dd730 @uri=#<URI::GID gid://minesweeper-app/Board/6>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [a964c0ed-4508-4b62-a6ce-f6258b4ce4f6] BoardMailer#board_created: processed outbound mail in 0.3ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [a964c0ed-4508-4b62-a6ce-f6258b4ce4f6] Error performing ActionMailer::MailDeliveryJob (Job ID: a964c0ed-4508-4b62-a6ce-f6258b4ce4f6) from Async(default) in 10.92ms: ArgumentError (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/action_dispatch/http/url.rb:64:in `full_url_for'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/action_dispatch/http/url.rb:54:in `url_for'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/action_dispatch/routing/route_set.rb:334:in `block in <class:RouteSet>'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/action_dispatch/routing/route_set.rb:212:in `call'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/action_dispatch/routing/route_set.rb:327:in `block in define_url_helper'
+/Users/abeehazara/Documents/minesweeper_app/app/mailers/board_mailer.rb:6:in `board_created'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/abstract_controller/base.rb:224:in `process_action'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actiontext-7.1.5/lib/action_text/rendering.rb:23:in `with_renderer'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actiontext-7.1.5/lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/abstract_controller/callbacks.rb:258:in `process_action'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/abstract_controller/base.rb:160:in `process'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/rescuable.rb:29:in `block in process'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/rescuable.rb:21:in `handle_exceptions'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/rescuable.rb:28:in `process'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionview-7.1.5/lib/action_view/rendering.rb:40:in `process'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/base.rb:658:in `block in process'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/notifications.rb:206:in `block in instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/notifications.rb:206:in `instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/base.rb:657:in `process'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/message_delivery.rb:136:in `block in processed_mailer'
+<internal:kernel>:90:in `tap'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/message_delivery.rb:135:in `processed_mailer'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/message_delivery.rb:124:in `deliver_now'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/mail_delivery_job.rb:28:in `perform'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/execution.rb:68:in `block in _perform_job'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/i18n-1.14.6/lib/i18n.rb:353:in `with_locale'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/translation.rb:9:in `block (2 levels) in <module:Translation>'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/core_ext/time/zones.rb:65:in `use_zone'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/timezones.rb:9:in `block (2 levels) in <module:Timezones>'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/execution.rb:67:in `_perform_job'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/instrumentation.rb:32:in `_perform_job'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/execution.rb:51:in `perform_now'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/instrumentation.rb:26:in `block in perform_now'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activerecord-7.1.5/lib/active_record/railties/job_runtime.rb:13:in `block in instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/instrumentation.rb:40:in `block in instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/notifications.rb:206:in `block in instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/notifications.rb:206:in `instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/instrumentation.rb:39:in `instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activerecord-7.1.5/lib/active_record/railties/job_runtime.rb:11:in `instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/instrumentation.rb:26:in `perform_now'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/logging.rb:18:in `block in perform_now'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/tagged_logging.rb:139:in `block in tagged'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/tagged_logging.rb:39:in `tagged'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/tagged_logging.rb:139:in `tagged'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/broadcast_logger.rb:241:in `method_missing'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/logging.rb:25:in `tag_logger'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/logging.rb:18:in `perform_now'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/execution.rb:29:in `block in execute'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/railtie.rb:67:in `block (4 levels) in <class:Railtie>'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/reloader.rb:77:in `block in wrap'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/execution_wrapper.rb:92:in `wrap'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/reloader.rb:74:in `wrap'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/railtie.rb:66:in `block (3 levels) in <class:Railtie>'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/execution.rb:27:in `execute'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/queue_adapters/async_adapter.rb:70:in `perform'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/concurrent-ruby-1.3.4/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in `run_task'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/concurrent-ruby-1.3.4/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in `block (3 levels) in create_worker'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/concurrent-ruby-1.3.4/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `loop'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/concurrent-ruby-1.3.4/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `block (2 levels) in create_worker'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/concurrent-ruby-1.3.4/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `catch'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/concurrent-ruby-1.3.4/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `block in create_worker'
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 766)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3852)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 5210)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 04:13:16 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:54
+  Rendered boards/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2469)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 5275)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.5ms | Allocations: 5543)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 04:13:29 +0500
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"abeehaishfaq6@gmail.com", "name"=>"abeeha", "width"=>"10", "height"=>"10", "mines"=>"10"}, "commit"=>"Generate Board"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mBoard Create (1.1ms)[0m  [1m[32mINSERT INTO "boards" ("name", "email", "width", "height", "mines", "grid", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "abeeha"], ["email", "abeehaishfaq6@gmail.com"], ["width", 10], ["height", 10], ["mines", 10], ["grid", "[[0,1,1,1,0,0,0,0,1,\"M\"],[0,1,\"M\",1,0,0,0,0,1,1],[0,1,1,1,0,0,1,1,1,0],[0,0,0,0,1,1,2,\"M\",2,1],[0,0,1,1,3,\"M\",3,2,\"M\",1],[0,0,2,\"M\",4,\"M\",2,1,2,2],[1,1,3,\"M\",3,1,1,0,1,\"M\"],[1,\"M\",2,1,1,0,0,0,1,1],[1,1,1,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]]"], ["created_at", "2024-12-10 23:13:29.345378"], ["updated_at", "2024-12-10 23:13:29.345378"]]
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: acbf5502-4852-44bd-a178-4da97535ac33) to Async(default) with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x000000010ca9aa30 @uri=#<URI::GID gid://minesweeper-app/Board/7>>]}
+[ActiveJob] ↳ app/controllers/boards_controller.rb:9:in `create'
+Redirected to http://127.0.0.1:3000/boards/7
+Completed 302 Found in 10ms (ActiveRecord: 3.2ms | Allocations: 3599)
+
+
+Started GET "/boards/7" for 127.0.0.1 at 2024-12-11 04:13:29 +0500
+[ActiveJob] [ActionMailer::MailDeliveryJob] [acbf5502-4852-44bd-a178-4da97535ac33]   [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [acbf5502-4852-44bd-a178-4da97535ac33] Performing ActionMailer::MailDeliveryJob (Job ID: acbf5502-4852-44bd-a178-4da97535ac33) from Async(default) enqueued at 2024-12-10T23:13:29.350958000Z with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x000000010ca56038 @uri=#<URI::GID gid://minesweeper-app/Board/7>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [acbf5502-4852-44bd-a178-4da97535ac33] BoardMailer#board_created: processed outbound mail in 0.3ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [acbf5502-4852-44bd-a178-4da97535ac33] Error performing ActionMailer::MailDeliveryJob (Job ID: acbf5502-4852-44bd-a178-4da97535ac33) from Async(default) in 3.97ms: ArgumentError (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/action_dispatch/http/url.rb:64:in `full_url_for'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/action_dispatch/http/url.rb:54:in `url_for'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/action_dispatch/routing/route_set.rb:334:in `block in <class:RouteSet>'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/action_dispatch/routing/route_set.rb:212:in `call'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/action_dispatch/routing/route_set.rb:327:in `block in define_url_helper'
+/Users/abeehazara/Documents/minesweeper_app/app/mailers/board_mailer.rb:6:in `board_created'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/abstract_controller/base.rb:224:in `process_action'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actiontext-7.1.5/lib/action_text/rendering.rb:23:in `with_renderer'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actiontext-7.1.5/lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/abstract_controller/callbacks.rb:258:in `process_action'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionpack-7.1.5/lib/abstract_controller/base.rb:160:in `process'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/rescuable.rb:29:in `block in process'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/rescuable.rb:21:in `handle_exceptions'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/rescuable.rb:28:in `process'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionview-7.1.5/lib/action_view/rendering.rb:40:in `process'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/base.rb:658:in `block in process'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/notifications.rb:206:in `block in instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/notifications.rb:206:in `instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/base.rb:657:in `process'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/message_delivery.rb:136:in `block in processed_mailer'
+<internal:kernel>:90:in `tap'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/message_delivery.rb:135:in `processed_mailer'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/message_delivery.rb:124:in `deliver_now'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/actionmailer-7.1.5/lib/action_mailer/mail_delivery_job.rb:28:in `perform'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/execution.rb:68:in `block in _perform_job'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/i18n-1.14.6/lib/i18n.rb:353:in `with_locale'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/translation.rb:9:in `block (2 levels) in <module:Translation>'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/core_ext/time/zones.rb:65:in `use_zone'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/timezones.rb:9:in `block (2 levels) in <module:Timezones>'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/execution.rb:67:in `_perform_job'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/instrumentation.rb:32:in `_perform_job'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/execution.rb:51:in `perform_now'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/instrumentation.rb:26:in `block in perform_now'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activerecord-7.1.5/lib/active_record/railties/job_runtime.rb:13:in `block in instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/instrumentation.rb:40:in `block in instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/notifications.rb:206:in `block in instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/notifications.rb:206:in `instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/instrumentation.rb:39:in `instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activerecord-7.1.5/lib/active_record/railties/job_runtime.rb:11:in `instrument'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/instrumentation.rb:26:in `perform_now'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/logging.rb:18:in `block in perform_now'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/tagged_logging.rb:139:in `block in tagged'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/tagged_logging.rb:39:in `tagged'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/tagged_logging.rb:139:in `tagged'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/broadcast_logger.rb:241:in `method_missing'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/logging.rb:25:in `tag_logger'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/logging.rb:18:in `perform_now'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/execution.rb:29:in `block in execute'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/railtie.rb:67:in `block (4 levels) in <class:Railtie>'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/reloader.rb:77:in `block in wrap'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/execution_wrapper.rb:92:in `wrap'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/reloader.rb:74:in `wrap'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/railtie.rb:66:in `block (3 levels) in <class:Railtie>'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `instance_exec'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activesupport-7.1.5/lib/active_support/callbacks.rb:141:in `run_callbacks'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/execution.rb:27:in `execute'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/activejob-7.1.5/lib/active_job/queue_adapters/async_adapter.rb:70:in `perform'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/concurrent-ruby-1.3.4/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in `run_task'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/concurrent-ruby-1.3.4/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in `block (3 levels) in create_worker'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/concurrent-ruby-1.3.4/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `loop'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/concurrent-ruby-1.3.4/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `block (2 levels) in create_worker'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/concurrent-ruby-1.3.4/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `catch'
+/Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/concurrent-ruby-1.3.4/lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `block in create_worker'
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 422)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3436)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 4093)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 04:24:02 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:54
+  Rendered boards/new.html.erb within layouts/application (Duration: 31.9ms | Allocations: 8194)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 207)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 90.4ms | Allocations: 45588)
+Completed 200 OK in 155ms (Views: 95.1ms | ActiveRecord: 12.4ms | Allocations: 65953)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 04:24:03 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:54
+  Rendered boards/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2542)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5348)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.6ms | Allocations: 5616)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 04:24:23 +0500
+Processing by BoardsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"abeehaishfaq6@gmail.com", "name"=>"abee", "width"=>"2", "height"=>"3", "mines"=>"2"}, "commit"=>"Generate Board"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mBoard Create (1.5ms)[0m  [1m[32mINSERT INTO "boards" ("name", "email", "width", "height", "mines", "grid", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "abee"], ["email", "abeehaishfaq6@gmail.com"], ["width", 2], ["height", 3], ["mines", 2], ["grid", "[[\"M\",2],[2,\"M\"],[1,1]]"], ["created_at", "2024-12-10 23:24:23.867045"], ["updated_at", "2024-12-10 23:24:23.867045"]]
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (40.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: d21c88d2-be5f-437f-83fa-c4a1825f4845) to Async(default) with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x0000000115254660 @uri=#<URI::GID gid://minesweeper-app/Board/8>>]}
+[ActiveJob] ↳ app/controllers/boards_controller.rb:9:in `create'
+Redirected to http://127.0.0.1:3000/boards/8
+Completed 302 Found in 85ms (ActiveRecord: 42.4ms | Allocations: 18356)
+
+
+Started GET "/boards/8" for 127.0.0.1 at 2024-12-11 04:24:23 +0500
+Processing by BoardsController#show as TURBO_STREAM
+  Parameters: {"id"=>"8"}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [d21c88d2-be5f-437f-83fa-c4a1825f4845]   [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [d21c88d2-be5f-437f-83fa-c4a1825f4845] Performing ActionMailer::MailDeliveryJob (Job ID: d21c88d2-be5f-437f-83fa-c4a1825f4845) from Async(default) enqueued at 2024-12-10T23:24:23.948990000Z with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x00000001152d21f0 @uri=#<URI::GID gid://minesweeper-app/Board/8>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [d21c88d2-be5f-437f-83fa-c4a1825f4845]   Rendering layout layouts/mailer.html.erb
+[ActiveJob] [ActionMailer::MailDeliveryJob] [d21c88d2-be5f-437f-83fa-c4a1825f4845]   Rendering board_mailer/board_created.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [d21c88d2-be5f-437f-83fa-c4a1825f4845]   Rendered board_mailer/board_created.html.erb within layouts/mailer (Duration: 0.4ms | Allocations: 159)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [d21c88d2-be5f-437f-83fa-c4a1825f4845]   Rendered layout layouts/mailer.html.erb (Duration: 1.0ms | Allocations: 380)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [d21c88d2-be5f-437f-83fa-c4a1825f4845] BoardMailer#board_created: processed outbound mail in 20.6ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [d21c88d2-be5f-437f-83fa-c4a1825f4845] Delivered mail 6758cda82de7_120b966302640@Abeehas-MacBook-Pro.local.mail (30.4ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [d21c88d2-be5f-437f-83fa-c4a1825f4845] Date: Wed, 11 Dec 2024 04:24:24 +0500
+From: abeeha.ishfaq@gmail.com
+To: abeehaishfaq6@gmail.com
+Message-ID: <6758cda82de7_120b966302640@Abeehas-MacBook-Pro.local.mail>
+Subject: Your Minesweeper Board has been created
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Your Minesweeper Board has been created!</h1>
+<p>Hello abee,</p>
+<p>Your new board has been successfully created. You can view it by clicking the link below:</p>
+<p><a href="http://localhost:3000/boards/8">View your board</a></p>
+<p>Best regards,</p>
+<p>The Minesweeper Team</p>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [d21c88d2-be5f-437f-83fa-c4a1825f4845] Performed ActionMailer::MailDeliveryJob (Job ID: d21c88d2-be5f-437f-83fa-c4a1825f4845) from Async(default) in 68.0ms
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 392)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3511)
+Completed 200 OK in 126ms (Views: 10.4ms | ActiveRecord: 91.7ms | Allocations: 24603)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 04:27:37 +0500
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:54
+  Rendered boards/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 3591)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 194)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 21928)
+Completed 200 OK in 50ms (Views: 33.9ms | ActiveRecord: 6.2ms | Allocations: 27930)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 04:27:47 +0500
+Processing by BoardsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"abeehaishfaq6@gmail.com", "name"=>"ddd", "width"=>"3", "height"=>"3", "mines"=>"2"}, "commit"=>"Generate Board"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mBoard Create (1.2ms)[0m  [1m[32mINSERT INTO "boards" ("name", "email", "width", "height", "mines", "grid", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "ddd"], ["email", "abeehaishfaq6@gmail.com"], ["width", 3], ["height", 3], ["mines", 2], ["grid", "[[0,1,\"M\"],[1,2,2],[1,\"M\",1]]"], ["created_at", "2024-12-10 23:27:47.648994"], ["updated_at", "2024-12-10 23:27:47.648994"]]
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (40.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 496de528-e833-45cb-8444-42c8f5f5dd6e) to Async(default) with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x0000000114c9deb0 @uri=#<URI::GID gid://minesweeper-app/Board/9>>]}
+[ActiveJob] ↳ app/controllers/boards_controller.rb:9:in `create'
+Redirected to http://127.0.0.1:3000/boards/9
+Completed 302 Found in 57ms (ActiveRecord: 42.2ms | Allocations: 4520)
+
+
+Started GET "/boards/9" for 127.0.0.1 at 2024-12-11 04:27:47 +0500
+Processing by BoardsController#show as TURBO_STREAM
+[ActiveJob] [ActionMailer::MailDeliveryJob] [496de528-e833-45cb-8444-42c8f5f5dd6e]   [1m[36mBoard Load (1.0ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Parameters: {"id"=>"9"}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [496de528-e833-45cb-8444-42c8f5f5dd6e] Performing ActionMailer::MailDeliveryJob (Job ID: 496de528-e833-45cb-8444-42c8f5f5dd6e) from Async(default) enqueued at 2024-12-10T23:27:47.701617000Z with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x0000000114bf70b0 @uri=#<URI::GID gid://minesweeper-app/Board/9>>]}
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [496de528-e833-45cb-8444-42c8f5f5dd6e]   Rendering layout layouts/mailer.html.erb
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+[ActiveJob] [ActionMailer::MailDeliveryJob] [496de528-e833-45cb-8444-42c8f5f5dd6e]   Rendering board_mailer/board_created.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [496de528-e833-45cb-8444-42c8f5f5dd6e]   Rendered board_mailer/board_created.html.erb within layouts/mailer (Duration: 0.7ms | Allocations: 198)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+[ActiveJob] [ActionMailer::MailDeliveryJob] [496de528-e833-45cb-8444-42c8f5f5dd6e]   Rendered layout layouts/mailer.html.erb (Duration: 1.9ms | Allocations: 733)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [496de528-e833-45cb-8444-42c8f5f5dd6e] BoardMailer#board_created: processed outbound mail in 6.2ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [496de528-e833-45cb-8444-42c8f5f5dd6e] Delivered mail 6758ce73b26b9_120b96630265a6@Abeehas-MacBook-Pro.local.mail (1.1ms)
+  Rendered boards/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1698)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [496de528-e833-45cb-8444-42c8f5f5dd6e] Date: Wed, 11 Dec 2024 04:27:47 +0500
+From: from@example.com
+To: abeehaishfaq6@gmail.com
+Message-ID: <6758ce73b26b9_120b96630265a6@Abeehas-MacBook-Pro.local.mail>
+Subject: Your Minesweeper Board has been created
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Your Minesweeper Board has been created!</h1>
+<p>Hello ddd,</p>
+<p>Your new board has been successfully created. You can view it by clicking the link below:</p>
+<p><a href="http://localhost:3000/boards/9">View your board</a></p>
+<p>Best regards,</p>
+<p>The Minesweeper Team</p>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [496de528-e833-45cb-8444-42c8f5f5dd6e] Performed ActionMailer::MailDeliveryJob (Job ID: 496de528-e833-45cb-8444-42c8f5f5dd6e) from Async(default) in 13.1ms
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 5294)
+Completed 200 OK in 18ms (Views: 12.3ms | ActiveRecord: 0.3ms | Allocations: 9121)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 04:34:32 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BoardsController#new as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:54
+  Rendered boards/new.html.erb within layouts/application (Duration: 34.2ms | Allocations: 8317)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 207)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 96.3ms | Allocations: 45717)
+Completed 200 OK in 163ms (Views: 101.6ms | ActiveRecord: 12.2ms | Allocations: 66083)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 04:34:42 +0500
+Processing by BoardsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"abeehaishfaq6@gmail.com", "name"=>"a", "width"=>"2", "height"=>"3", "mines"=>"2"}, "commit"=>"Generate Board"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mBoard Create (1.4ms)[0m  [1m[32mINSERT INTO "boards" ("name", "email", "width", "height", "mines", "grid", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "a"], ["email", "abeehaishfaq6@gmail.com"], ["width", 2], ["height", 3], ["mines", 2], ["grid", "[[1,1],[\"M\",2],[\"M\",2]]"], ["created_at", "2024-12-10 23:34:42.780222"], ["updated_at", "2024-12-10 23:34:42.780222"]]
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (44.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 344bab7c-a9bd-41f9-8495-431e4c59c380) to Async(default) with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x0000000106a12d70 @uri=#<URI::GID gid://minesweeper-app/Board/10>>]}
+[ActiveJob] ↳ app/controllers/boards_controller.rb:9:in `create'
+Redirected to http://127.0.0.1:3000/boards/10
+Completed 302 Found in 90ms (ActiveRecord: 46.1ms | Allocations: 18338)
+
+
+Started GET "/boards/10" for 127.0.0.1 at 2024-12-11 04:34:42 +0500
+Processing by BoardsController#show as TURBO_STREAM
+  Parameters: {"id"=>"10"}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [344bab7c-a9bd-41f9-8495-431e4c59c380]   [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [344bab7c-a9bd-41f9-8495-431e4c59c380] Performing ActionMailer::MailDeliveryJob (Job ID: 344bab7c-a9bd-41f9-8495-431e4c59c380) from Async(default) enqueued at 2024-12-10T23:34:42.866749000Z with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x0000000106af3af0 @uri=#<URI::GID gid://minesweeper-app/Board/10>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [344bab7c-a9bd-41f9-8495-431e4c59c380]   Rendering layout layouts/mailer.html.erb
+[ActiveJob] [ActionMailer::MailDeliveryJob] [344bab7c-a9bd-41f9-8495-431e4c59c380]   Rendering board_mailer/board_created.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [344bab7c-a9bd-41f9-8495-431e4c59c380]   Rendered board_mailer/board_created.html.erb within layouts/mailer (Duration: 0.8ms | Allocations: 296)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [344bab7c-a9bd-41f9-8495-431e4c59c380]   Rendered layout layouts/mailer.html.erb (Duration: 1.6ms | Allocations: 769)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [344bab7c-a9bd-41f9-8495-431e4c59c380] BoardMailer#board_created: processed outbound mail in 9.1ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [344bab7c-a9bd-41f9-8495-431e4c59c380] Delivered mail 6758d012dbea0_129bd65e03097d@Abeehas-MacBook-Pro.local.mail (6.4ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [344bab7c-a9bd-41f9-8495-431e4c59c380] Date: Wed, 11 Dec 2024 04:34:42 +0500
+From: from@example.com
+To: abeehaishfaq6@gmail.com
+Message-ID: <6758d012dbea0_129bd65e03097d@Abeehas-MacBook-Pro.local.mail>
+Subject: Your Minesweeper Board has been created
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Your Minesweeper Board has been created!</h1>
+<p>Hello a,</p>
+<p>Your new board has been successfully created. You can view it by clicking the link below:</p>
+<p><a href="http://localhost:3000/boards/10">View your board</a></p>
+<p>Best regards,</p>
+<p>The Minesweeper Team</p>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [344bab7c-a9bd-41f9-8495-431e4c59c380] Performed ActionMailer::MailDeliveryJob (Job ID: 344bab7c-a9bd-41f9-8495-431e4c59c380) from Async(default) in 23.29ms
+  [1m[36mBoard Load (0.7ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 392)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3460)
+Completed 200 OK in 29ms (Views: 5.8ms | ActiveRecord: 11.0ms | Allocations: 16032)
+
+
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering board_mailer/board_created.html.erb within layouts/mailer
+  Rendered board_mailer/board_created.html.erb within layouts/mailer (Duration: 0.5ms | Allocations: 311)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.0ms | Allocations: 574)
+BoardMailer#board_created: processed outbound mail in 31.6ms
+Delivered mail 6758d06026379_12acdd5c9449@Abeehas-MacBook-Pro.local.mail (5.7ms)
+Date: Wed, 11 Dec 2024 04:36:00 +0500
+From: from@example.com
+To: abeehaishfaq6@gmail.com
+Message-ID: <6758d06026379_12acdd5c9449@Abeehas-MacBook-Pro.local.mail>
+Subject: Your Minesweeper Board has been created
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Your Minesweeper Board has been created!</h1>
+<p>Hello a,</p>
+<p>Your new board has been successfully created. You can view it by clicking the link below:</p>
+<p><a href="http://localhost:3000/boards/10">View your board</a></p>
+<p>Best regards,</p>
+<p>The Minesweeper Team</p>
+
+  </body>
+</html>
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 04:40:38 +0500
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  [1m[36mBoard Exists? (49.6ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (0.6ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  Rendered boards/index.html.erb within layouts/application (Duration: 72.5ms | Allocations: 9668)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 83.1ms | Allocations: 12707)
+Completed 200 OK in 86ms (Views: -9.8ms | ActiveRecord: 93.2ms | Allocations: 13520)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 04:40:38 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:54
+  Rendered boards/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2695)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 5502)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.5ms | Allocations: 5763)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 04:41:11 +0500
+Processing by BoardsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"abeehaishfaq6@gmail.com", "name"=>"2", "width"=>"2", "height"=>"2", "mines"=>"3"}, "commit"=>"Generate Board"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mBoard Create (1.6ms)[0m  [1m[32mINSERT INTO "boards" ("name", "email", "width", "height", "mines", "grid", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "2"], ["email", "abeehaishfaq6@gmail.com"], ["width", 2], ["height", 2], ["mines", 3], ["grid", "[[\"M\",\"M\"],[3,\"M\"]]"], ["created_at", "2024-12-10 23:41:11.552560"], ["updated_at", "2024-12-10 23:41:11.552560"]]
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (44.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 1c74301b-7f33-42a5-8002-e92c540e81e1) to Async(default) with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x00000001064b8708 @uri=#<URI::GID gid://minesweeper-app/Board/11>>]}
+[ActiveJob] ↳ app/controllers/boards_controller.rb:9:in `create'
+Redirected to http://127.0.0.1:3000/boards/11
+Completed 302 Found in 51ms (ActiveRecord: 45.9ms | Allocations: 2801)
+
+
+Started GET "/boards/11" for 127.0.0.1 at 2024-12-11 04:41:11 +0500
+Processing by BoardsController#show as TURBO_STREAM
+[ActiveJob] [ActionMailer::MailDeliveryJob] [1c74301b-7f33-42a5-8002-e92c540e81e1]   [1m[36mBoard Load (0.8ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Parameters: {"id"=>"11"}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [1c74301b-7f33-42a5-8002-e92c540e81e1] Performing ActionMailer::MailDeliveryJob (Job ID: 1c74301b-7f33-42a5-8002-e92c540e81e1) from Async(default) enqueued at 2024-12-10T23:41:11.600777000Z with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x0000000106592ea8 @uri=#<URI::GID gid://minesweeper-app/Board/11>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [1c74301b-7f33-42a5-8002-e92c540e81e1]   Rendering layout layouts/mailer.html.erb
+[ActiveJob] [ActionMailer::MailDeliveryJob] [1c74301b-7f33-42a5-8002-e92c540e81e1]   Rendering board_mailer/board_created.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [1c74301b-7f33-42a5-8002-e92c540e81e1]   Rendered board_mailer/board_created.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 17)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [1c74301b-7f33-42a5-8002-e92c540e81e1]   Rendered layout layouts/mailer.html.erb (Duration: 1.6ms | Allocations: 1085)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [1c74301b-7f33-42a5-8002-e92c540e81e1] BoardMailer#board_created: processed outbound mail in 3.2ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [1c74301b-7f33-42a5-8002-e92c540e81e1] Delivered mail 6758d197996b4_129bd65e0310e8@Abeehas-MacBook-Pro.local.mail (1.0ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [1c74301b-7f33-42a5-8002-e92c540e81e1] Date: Wed, 11 Dec 2024 04:41:11 +0500
+From: from@example.com
+To: abeehaishfaq6@gmail.com
+Message-ID: <6758d197996b4_129bd65e0310e8@Abeehas-MacBook-Pro.local.mail>
+Subject: Your Minesweeper Board has been created
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Your Minesweeper Board has been created!</h1>
+<p>Hello 2,</p>
+<p>Your new board has been successfully created. You can view it by clicking the link below:</p>
+<p><a href="http://localhost:3000/boards/11">View your board</a></p>
+<p>Best regards,</p>
+<p>The Minesweeper Team</p>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [1c74301b-7f33-42a5-8002-e92c540e81e1] Performed ActionMailer::MailDeliveryJob (Job ID: 1c74301b-7f33-42a5-8002-e92c540e81e1) from Async(default) in 8.68ms
+  [1m[36mBoard Load (0.3ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 76)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3094)
+Completed 200 OK in 24ms (Views: 6.0ms | ActiveRecord: 5.6ms | Allocations: 10113)
+
+
+Started GET "/boards" for 127.0.0.1 at 2024-12-11 04:41:40 +0500
+Started GET "/" for 127.0.0.1 at 2024-12-11 04:41:40 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BoardsController#new as HTML
+Processing by BoardsController#index as HTML
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:2
+  [1m[36mBoard Load (1.1ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/views/boards/index.html.erb:16
+  [1m[36mBoard Count (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "boards"[0m
+  ↳ app/views/boards/index.html.erb:30
+  [1m[36mBoard Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:54
+  Rendered boards/new.html.erb within layouts/application (Duration: 26.5ms | Allocations: 11002)
+  Rendered boards/index.html.erb within layouts/application (Duration: 33.9ms | Allocations: 15026)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 222)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 272)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 188)
+  Rendered layout layouts/application.html.erb (Duration: 139.6ms | Allocations: 81175)
+  Rendered layout layouts/application.html.erb (Duration: 144.2ms | Allocations: 83648)
+Completed 200 OK in 193ms (Views: 137.7ms | ActiveRecord: 14.0ms | Allocations: 107290)
+
+
+Completed 200 OK in 193ms (Views: 147.8ms | ActiveRecord: 9.4ms | Allocations: 107065)
+
+
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 04:41:50 +0500
+Processing by BoardsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"abeehaishfaq6@gmail.com", "name"=>"2", "width"=>"3", "height"=>"3", "mines"=>"3"}, "commit"=>"Generate Board"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mBoard Create (1.7ms)[0m  [1m[32mINSERT INTO "boards" ("name", "email", "width", "height", "mines", "grid", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "2"], ["email", "abeehaishfaq6@gmail.com"], ["width", 3], ["height", 3], ["mines", 3], ["grid", "[[2,\"M\",2],[3,\"M\",2],[\"M\",2,1]]"], ["created_at", "2024-12-10 23:41:50.507760"], ["updated_at", "2024-12-10 23:41:50.507760"]]
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (40.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: a5719e0d-81d6-482d-8308-f5332292f277) to Async(default) with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x000000010d3c1ca8 @uri=#<URI::GID gid://minesweeper-app/Board/12>>]}
+[ActiveJob] ↳ app/controllers/boards_controller.rb:9:in `create'
+Redirected to http://127.0.0.1:3000/boards/12
+Completed 302 Found in 593ms (ActiveRecord: 42.3ms | Allocations: 49123)
+
+
+Started GET "/boards/12" for 127.0.0.1 at 2024-12-11 04:41:51 +0500
+Processing by BoardsController#show as TURBO_STREAM
+  Parameters: {"id"=>"12"}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [a5719e0d-81d6-482d-8308-f5332292f277]   [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [a5719e0d-81d6-482d-8308-f5332292f277] Performing ActionMailer::MailDeliveryJob (Job ID: a5719e0d-81d6-482d-8308-f5332292f277) from Async(default) enqueued at 2024-12-10T23:41:51.096755000Z with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x000000010d0c9028 @uri=#<URI::GID gid://minesweeper-app/Board/12>>]}
+  [1m[36mBoard Load (1.6ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 801)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [a5719e0d-81d6-482d-8308-f5332292f277]   Rendering layout layouts/mailer.html.erb
+[ActiveJob] [ActionMailer::MailDeliveryJob] [a5719e0d-81d6-482d-8308-f5332292f277]   Rendering board_mailer/board_created.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [a5719e0d-81d6-482d-8308-f5332292f277]   Rendered board_mailer/board_created.html.erb within layouts/mailer (Duration: 1.2ms | Allocations: 281)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [a5719e0d-81d6-482d-8308-f5332292f277]   Rendered layout layouts/mailer.html.erb (Duration: 2.8ms | Allocations: 799)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [a5719e0d-81d6-482d-8308-f5332292f277] BoardMailer#board_created: processed outbound mail in 15.5ms
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 9308)
+Completed 200 OK in 31ms (Views: 21.9ms | ActiveRecord: 1.6ms | Allocations: 14135)
+
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [a5719e0d-81d6-482d-8308-f5332292f277] Delivered mail 6758d1bf22466_12bc666f8-468@Abeehas-MacBook-Pro.local.mail (25.0ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [a5719e0d-81d6-482d-8308-f5332292f277] Date: Wed, 11 Dec 2024 04:41:51 +0500
+From: from@example.com
+To: abeehaishfaq6@gmail.com
+Message-ID: <6758d1bf22466_12bc666f8-468@Abeehas-MacBook-Pro.local.mail>
+Subject: Your Minesweeper Board has been created
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Your Minesweeper Board has been created!</h1>
+<p>Hello 2,</p>
+<p>Your new board has been successfully created. You can view it by clicking the link below:</p>
+<p><a href="http://localhost:3000/boards/12">View your board</a></p>
+<p>Best regards,</p>
+<p>The Minesweeper Team</p>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [a5719e0d-81d6-482d-8308-f5332292f277] Performed ActionMailer::MailDeliveryJob (Job ID: a5719e0d-81d6-482d-8308-f5332292f277) from Async(default) in 51.57ms
+Started GET "/boards/12" for ::1 at 2024-12-11 04:42:01 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 92)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2991)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 3662)
+
+
+Started GET "/boards/12" for ::1 at 2024-12-11 04:42:21 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 92)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3093)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 3748)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-11 04:43:52 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:54
+  Rendered boards/new.html.erb within layouts/application (Duration: 20.1ms | Allocations: 2722)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 5559)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.6ms | Allocations: 5820)
+
+
+Started GET "/letter_opener" for ::1 at 2024-12-11 04:46:13 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/letter_opener"):
+  
+Started POST "/boards" for 127.0.0.1 at 2024-12-11 04:46:40 +0500
+Processing by BoardsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"email"=>"abeehaishfaq6@gmail.com", "name"=>"3", "width"=>"3", "height"=>"3", "mines"=>"3"}, "commit"=>"Generate Board"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mBoard Create (1.5ms)[0m  [1m[32mINSERT INTO "boards" ("name", "email", "width", "height", "mines", "grid", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "3"], ["email", "abeehaishfaq6@gmail.com"], ["width", 3], ["height", 3], ["mines", 3], ["grid", "[[\"M\",\"M\",1],[3,3,1],[\"M\",1,0]]"], ["created_at", "2024-12-10 23:46:40.298925"], ["updated_at", "2024-12-10 23:46:40.298925"]]
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/boards_controller.rb:8:in `create'
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 35dd5b6f-8c0d-43eb-8606-379a52983f19) to Async(default) with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x0000000112fb9358 @uri=#<URI::GID gid://minesweeper-app/Board/13>>]}
+[ActiveJob] ↳ app/controllers/boards_controller.rb:9:in `create'
+Redirected to http://127.0.0.1:3000/boards/13
+Completed 302 Found in 125ms (ActiveRecord: 56.6ms | Allocations: 37319)
+
+
+Started GET "/boards/13" for 127.0.0.1 at 2024-12-11 04:46:40 +0500
+Processing by BoardsController#show as TURBO_STREAM
+  Parameters: {"id"=>"13"}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [35dd5b6f-8c0d-43eb-8606-379a52983f19]   [1m[36mBoard Load (1.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [35dd5b6f-8c0d-43eb-8606-379a52983f19] Performing ActionMailer::MailDeliveryJob (Job ID: 35dd5b6f-8c0d-43eb-8606-379a52983f19) from Async(default) enqueued at 2024-12-10T23:46:40.334623000Z with arguments: "BoardMailer", "board_created", "deliver_now", {:args=>[#<GlobalID:0x00000001138cb220 @uri=#<URI::GID gid://minesweeper-app/Board/13>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [35dd5b6f-8c0d-43eb-8606-379a52983f19]   Rendering layout layouts/mailer.html.erb
+[ActiveJob] [ActionMailer::MailDeliveryJob] [35dd5b6f-8c0d-43eb-8606-379a52983f19]   Rendering board_mailer/board_created.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [35dd5b6f-8c0d-43eb-8606-379a52983f19]   Rendered board_mailer/board_created.html.erb within layouts/mailer (Duration: 0.5ms | Allocations: 163)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [35dd5b6f-8c0d-43eb-8606-379a52983f19]   Rendered layout layouts/mailer.html.erb (Duration: 1.4ms | Allocations: 647)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [35dd5b6f-8c0d-43eb-8606-379a52983f19] BoardMailer#board_created: processed outbound mail in 8.0ms
+  [1m[36mBoard Load (0.4ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 462)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [35dd5b6f-8c0d-43eb-8606-379a52983f19] Delivered mail 6758d2e05b6bb_12c8e6964-485@Abeehas-MacBook-Pro.local.mail (13.2ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [35dd5b6f-8c0d-43eb-8606-379a52983f19] Date: Wed, 11 Dec 2024 04:46:40 +0500
+From: from@example.com
+To: abeehaishfaq6@gmail.com
+Message-ID: <6758d2e05b6bb_12c8e6964-485@Abeehas-MacBook-Pro.local.mail>
+Subject: Your Minesweeper Board has been created
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Your Minesweeper Board has been created!</h1>
+<p>Hello 3,</p>
+<p>Your new board has been successfully created. You can view it by clicking the link below:</p>
+<p><a href="http://localhost:3000/boards/13">View your board</a></p>
+<p>Best regards,</p>
+<p>The Minesweeper Team</p>
+
+  </body>
+</html>
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [35dd5b6f-8c0d-43eb-8606-379a52983f19] Performed ActionMailer::MailDeliveryJob (Job ID: 35dd5b6f-8c0d-43eb-8606-379a52983f19) from Async(default) in 35.53ms
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 236)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 138)
+  Rendered layout layouts/application.html.erb (Duration: 66.7ms | Allocations: 38554)
+Completed 200 OK in 91ms (Views: 70.7ms | ActiveRecord: 8.9ms | Allocations: 53646)
+
+
+Started GET "/letter_opener" for ::1 at 2024-12-11 04:46:55 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/letter_opener"):
+  
+Started GET "/letter_opener" for ::1 at 2024-12-11 04:48:21 +0500
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 1.9ms | Allocations: 1676)
+  Rendered collection of /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [1 times] (Duration: 1.9ms | Allocations: 1321)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 6.1ms | Allocations: 3896)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 3.9ms | Allocations: 630)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.3ms | Allocations: 170)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 7.5ms | Allocations: 1508)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 3.0ms | Allocations: 1912)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.5ms | Allocations: 316)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 5.9ms | Allocations: 2852)
+  Rendered layout /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 21.6ms | Allocations: 9025)
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 10717)
+
+
+Started GET "/letter_opener/1733874400_3776891_d1adb24/rich" for ::1 at 2024-12-11 04:48:21 +0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1733874400_3776891_d1adb24", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 8)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 762)
+
+
+Started GET "/letter_opener/1733874111_143641_3490747/rich" for ::1 at 2024-12-11 04:48:23 +0500
+Started GET "/letter_opener/1733874111_143641_3490747/rich" for ::1 at 2024-12-11 04:48:23 +0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1733874111_143641_3490747", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 587)
+
+
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1733874111_143641_3490747", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 551)
+
+
+Started GET "/letter_opener/" for ::1 at 2024-12-11 04:48:30 +0500
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 1.3ms | Allocations: 1080)
+  Rendered collection of /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [1 times] (Duration: 1.1ms | Allocations: 1083)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 3.2ms | Allocations: 2557)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.6ms | Allocations: 203)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.3ms | Allocations: 148)
+  Rendered layout /Users/abeehazara/.rvm/gems/ruby-3.2.6/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 5.1ms | Allocations: 3344)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 3682)
+
+
+Started GET "/letter_opener/1733874400_3776891_d1adb24/rich" for ::1 at 2024-12-11 04:48:30 +0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1733874400_3776891_d1adb24", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 551)
+
+
+Started GET "/letter_opener/1733874111_143641_3490747/rich" for ::1 at 2024-12-11 04:48:35 +0500
+Started GET "/letter_opener/1733874111_143641_3490747/rich" for ::1 at 2024-12-11 04:48:35 +0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1733874111_143641_3490747", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Processing by LetterOpenerWeb::LettersController#show as HTML
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 923)
+
+
+  Parameters: {"id"=>"1733874111_143641_3490747", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 551)
+
+
+Started GET "/letter_opener/1733874400_3776891_d1adb24/rich" for ::1 at 2024-12-11 04:48:38 +0500
+Started GET "/letter_opener/1733874400_3776891_d1adb24/rich" for ::1 at 2024-12-11 04:48:38 +0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1733874400_3776891_d1adb24", "style"=>"rich"}
+  Rendering html template
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+  Parameters: {"id"=>"1733874400_3776891_d1adb24", "style"=>"rich"}
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 950)
+
+
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 804)
+
+
+Started GET "/letter_opener/1733874111_143641_3490747/rich" for ::1 at 2024-12-11 04:48:39 +0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1733874111_143641_3490747", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 551)
+
+
+Started GET "/boards/12" for ::1 at 2024-12-11 04:48:42 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"12"}
+DEPRECATION WARNING: Passing the class as positional argument is deprecated and will be removed in Rails 7.2.
+
+Please pass the class as a keyword argument:
+
+  serialize :grid, type: Array
+ (called from <class:Board> at /Users/abeehazara/Documents/minesweeper_app/app/models/board.rb:8)
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 396)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 230)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 19034)
+Completed 200 OK in 38ms (Views: 21.2ms | ActiveRecord: 6.8ms | Allocations: 26070)
+
+
+Started GET "/" for ::1 at 2024-12-11 04:48:44 +0500
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  [1m[36mBoard Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "boards" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/boards/new.html.erb:41
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" ORDER BY "boards"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/boards/new.html.erb:54
+  Rendered boards/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 4550)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 7357)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.6ms | Allocations: 7691)
+
+
+Started GET "/letter_opener/1733874400_3776891_d1adb24/rich" for ::1 at 2024-12-11 04:48:45 +0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1733874400_3776891_d1adb24", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 552)
+
+
+Started GET "/boards/13" for ::1 at 2024-12-11 04:48:47 +0500
+Processing by BoardsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/boards_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering boards/show.html.erb within layouts/application
+  Rendered boards/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 60)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3103)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 3772)
+
+
+Started GET "/letter_opener/1733874111_143641_3490747/rich" for ::1 at 2024-12-11 04:48:53 +0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1733874111_143641_3490747", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 551)
+
+

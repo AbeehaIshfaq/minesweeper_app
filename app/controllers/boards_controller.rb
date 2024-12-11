@@ -5,11 +5,10 @@ class BoardsController < ApplicationController
   
     def create
         @board = Board.new(board_params)
-        Rails.logger.debug "Attempting to save board..."
         if @board.save
+          BoardMailer.board_created(@board).deliver_later
           redirect_to @board, notice: 'Board was successfully created.'
         else
-          Rails.logger.debug "Validation failed: #{@board.errors.full_messages.join(", ")}"
           render :new, status: :unprocessable_entity
         end
     end

@@ -10,6 +10,7 @@ class Board < ApplicationRecord
     private
 
     def mines_less_than_or_equal_to_cells
+        return if width.nil? || height.nil? || mines.nil?
         if mines > width * height
           errors.add(:mines, "cannot be greater than the total number of cells ")
         end

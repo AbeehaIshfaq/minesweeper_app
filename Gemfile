@@ -3,6 +3,16 @@ source "https://rubygems.org"
 ruby "3.2.6"
 # Gemfile
 gem 'kaminari'
+group :development do
+  gem 'letter_opener_web'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
+end
+group :test do
+  gem 'rails-controller-testing'
+end
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.5"
