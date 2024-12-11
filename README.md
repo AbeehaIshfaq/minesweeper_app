@@ -4,9 +4,9 @@ Minesweeper Board Generator
 This is a Minesweeper Board Generator built with Ruby on Rails. The game allows users to generate Minesweeper board on a grid of cells, with the ability to conceal and reveal cells.
 
 Features
-Dynamic Minesweeper Grid: A random grid with cells that contain mines or numbers indicating adjacent mines.
-Cell Reveal Mechanism: Cells can be revealed by hovering over them.
-Conceal Board: Ability to conceal and reveal the board at any time by clicking the "Conceal Board" button.
+1. Dynamic Minesweeper Grid: A random grid with cells that contain mines or numbers indicating adjacent mines.
+2. Cell Reveal Mechanism: Cells can be revealed by hovering over them.
+3. Conceal Board: Ability to conceal and reveal the board at any time by clicking the "Conceal Board" button.
 
 Requirements
 Before running the application, make sure you have the following installed:
