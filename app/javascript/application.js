@@ -1,14 +1,21 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 import "@hotwired/turbo-rails"
 import "controllers"
-
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('turbo:load', function() {
     const concealBoardButton = document.getElementById('conceal-board-btn');
     const boardCells = document.querySelectorAll('.board-cell');
   
     concealBoardButton.addEventListener('click', function() {
+      const isConcealed = boardCells[0].classList.contains('concealed');
+      
       boardCells.forEach(cell => {
-        cell.classList.add('concealed'); 
+        if (isConcealed) {
+          cell.classList.remove('concealed');
+          cell.classList.add('revealed');
+        } else {
+          cell.classList.add('concealed');
+          cell.classList.remove('revealed');
+        }
       });
     });
   

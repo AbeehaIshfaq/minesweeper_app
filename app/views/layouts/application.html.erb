@@ -4,9 +4,13 @@
     <title>Minesweeper App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-<%= javascript_include_tag "application", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "application", media: "all", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <link rel="preload" href="/assets/application.js" as="script">
+
+    <%= javascript_include_tag 'application' %> <!-- Ensure this is in the Minesweeper page layout -->
+
+    <%= stylesheet_link_tag "application", media: "all", "data-turbo-track": "reload" %>
   </head>
 
   <body class="d-flex flex-column min-vh-100">

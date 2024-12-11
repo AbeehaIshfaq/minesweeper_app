@@ -25,7 +25,16 @@ Rails.application.configure do
 
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
-
+  config.action_mailer.default_url_options = { host: ENV['MAILER_HOST'] }
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.gmail.com',
+    port: 587,
+    authentication: 'plain',
+    user_name: ENV['MAILER_USERNAME'],
+    password: ENV['MAILER_PASSWORD'],
+    enable_starttls_auto: true
+  }
+  
   # Do not fall back to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
